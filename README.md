@@ -19,7 +19,7 @@ Prilikom registracije klijent navodi lične podatke kao što su:\
 •	Godište\
 •	Šifra (uz potvrdu iste)\
 Pri tome, moguće je izabrati i profilnu sliku, iako je ovo polje neobavezno.\
-Napomena: Samo punoljetni klijenti(18+) se mogu registrovati.\
+Napomena: Samo punoljetni klijenti (18+) se mogu registrovati.\
 
 ## **Registracija vozača**
 Registracija vozača uključuje navođenje osnovnih podataka kao što su:\
@@ -32,7 +32,7 @@ Registracija vozača uključuje navođenje osnovnih podataka kao što su:\
 •	Adresa stanovanja\
 •	Radno iskustvo\
 •	Broj kreditne kartice\
-•	Šifra (uz potvrdu iste) , itd.
+•	Šifra (uz potvrdu iste), itd.
 
 ## **Odobravanje zahtjeva za registraciju**
 Admin u zavisnosti od potrebe za novim zaposlenicima kao i o cjelokupnom dojmu o vozaču koji se registrovao ima mogućnost da odobri ili ne odobri poslani zahtjev. U slučaju da je zahtjev odobren, vozač postaje novi zaposlenik firme e-Taxi.\
@@ -54,7 +54,7 @@ Admin ima mogućnost da blokira određenog vozača u zavisnosti od ukupnog dojma
 ## **Pristup profilima vozača/klijenata**
 Admin ima pristup svim profilima vozača.\
 Vozači imaju pristup isključivo vlastitom profilu.\
-Klijent također ima pristup vlastitom profilu, kao i profilima svih vozača.\
+Klijent također ima pristup vlastitom profilu, kao i profilima svih vozača.
 
 ## **Zahtjev za uslugu**
 Klijent najprije šalje zahtjev za uslugu, koja uključuje podatke o pojedinostima vožnje i o željenoj destinaciji kao što su:\
@@ -91,7 +91,7 @@ Atribut stalnog korisnika dobijaju oni korisnici koji imaju preko X potvrđenih 
 •	Mogućnost jednostavnog prekida uposlenja u firmi (brisanje profila vozača)\
 •	Mogućnost pristupa precizno definiranom cjenovniku vožnje\
 •	Mogućnost pristupa cjelokupnoj ocjeni svakog od vozača\
-•	Mogućnost ostvarivanja dodatnih popusta kao i atributa stalnog korisnika\
+•	Mogućnost ostvarivanja dodatnih popusta kao i atributa stalnog korisnika
 
 # **Akteri**
 Administrator (admin) - Osoba koja nadgleda cjelokupni sistem, te koja ima uvid u historiju poslovanja firme.\
