@@ -4,7 +4,7 @@
 3. Nedić Marko
 
 # **Opis teme**
-e-Taxi je aplikacija koja omogućava jednostavnu i sigurnu vožnju do željenog odredišta u što kraćem vremenskom roku, pri pristupačnim cijenama.
+e-Taxi je aplikacija koja omogućava jednostavnu i sigurnu vožnju do željenog odredišta u što kraćem vremenskom roku, pri pristupačnim cijenama.\
 Koliko puta Vam se desilo da taksi čekate predugo? Uz ovu aplikaciju zaboravite na čekanje – pouzdan prevoz je tu za Vas već za par minuta.
 Svrha aplikacije je omogućiti unapređeniji i jednostavniji prevoz klijenta/klijenata od trenutne lokacije (tačke A) do precizno definiranog odredišta (tačke B). Pored toga što je povoljna za klijente, vožnja uz e-Taxi je isplativa i za vozače. Uz par dodira na ekran svog pametnog telefona imate mogućnost da se registrujete kao vozač i ispunite svoje profesionalne ciljeve uz fleksibilan raspored koji sami određujete.
 Bilo da Vam treba svakodnevna vožnja do posla, vožnja izvan grada ili poseban prevoz za veći broj osoba – za Vas je tu e-Taxi.
