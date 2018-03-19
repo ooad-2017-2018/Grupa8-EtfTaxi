@@ -19,7 +19,7 @@ Prilikom registracije klijent navodi lične podatke kao što su:\
 •	Godište\
 •	Šifra (uz potvrdu iste)\
 Pri tome, moguće je izabrati i profilnu sliku, iako je ovo polje neobavezno.\
-Napomena: Samo punoljetni klijenti (18+) se mogu registrovati.\
+Napomena: Samo punoljetni klijenti (18+) se mogu registrovati.
 
 ## **Registracija vozača**
 Registracija vozača uključuje navođenje osnovnih podataka kao što su:\
