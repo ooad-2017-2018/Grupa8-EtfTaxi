@@ -1,7 +1,7 @@
 # **GRUPA 8: TimPadobranci**
-# **TEMA: e-Taxi**
+## **Tema: e-Taxi**
 
-# **Članovi tima:**
+## **Članovi tima:**
 1. Plakalović Anja
 2. Pejović Petar
 3. Nedić Marko
