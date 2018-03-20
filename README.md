@@ -94,14 +94,14 @@ Atribut stalnog korisnika dobijaju oni korisnici koji imaju preko X potvrđenih 
 •	Mogućnost jednostavnog prekida uposlenja u firmi (brisanje profila vozača)\
 •	Mogućnost pristupa precizno definiranom cjenovniku vožnje\
 •	Mogućnost pristupa cjelokupnoj ocjeni svakog od vozača\
-•	Mogućnost ostvarivanja dodatnih popusta kao i atributa stalnog korisnika
+•	Mogućnost ostvarivanja dodatnih popusta kao i atributa stalnog korisnika\
 
 # **Akteri**
-Administrator (admin) - Osoba koja nadgleda cjelokupni sistem, te koja ima uvid u historiju poslovanja firme.\
-Vozač - Osoba koja je uposlenik firme e-Taxi, te ima zadatak da po želji klijenta vrši usluge vožnje po unaprijed određenim rutama.\
-Klijent (korisnik) -  Osoba koja koristi navedene usluge koje pruža aplikacija, ali bez dodatnih popusta.\
-Stalni klijent (stalni korisnik) - Osoba koja koristi navedene usluge koje pruža aplikacija, uz dodatne popuste\
-e-Taxi sistem – Sporedni akter koji predstavlja način komuniciranja korisnika (klijenta, vozača, administratora i same aplikacije).
+• Administrator (admin) - Osoba koja nadgleda cjelokupni sistem, te koja ima uvid u historiju poslovanja firme.\
+• Vozač - Osoba koja je uposlenik firme e-Taxi, te ima zadatak da po želji klijenta vrši usluge vožnje po unaprijed određenim rutama.\
+• Klijent (korisnik) -  Osoba koja koristi navedene usluge koje pruža aplikacija, ali bez dodatnih popusta.\
+• Stalni klijent (stalni korisnik) - Osoba koja koristi navedene usluge koje pruža aplikacija, uz dodatne popuste.\
+• e-Taxi sistem – Sporedni akter koji predstavlja način komuniciranja korisnika (klijenta, vozača, administratora i same aplikacije).
 
 
 
