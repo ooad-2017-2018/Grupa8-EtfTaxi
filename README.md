@@ -64,7 +64,7 @@ Klijent najprije šalje zahtjev za uslugu, koja uključuje podatke o pojedinosti
 •	Grad\
 •	Adresa\
 •	Broj osoba koje se prevoze\
-, dok se trenutna lokacija klijenta određuje pomoću Bing Maps platforme. Svaki od vozača, koji su trenutno slobodni, koji se nalaze u datom gradu i koji zadovoljavaju traženi broj sjedišta, dobija zahtjev za navedenu vožnju u obliku notifikacije na profil. Vozači sami odlučuju kojeg klijenta će uslužiti. Nakon prihvatanja zahtjeva, svim ostalim vozačima se data notifikacija gasi čime je osigurana nemogućnost da više vozača prihvati istu rutu. Vozač koji je prihvatio zahtjev, posjeduje opciju uvida u trenutnu lokaciju klijenta u obliku forme na kojoj se otvara Bing Maps.
+Dok se trenutna lokacija klijenta određuje pomoću Bing Maps platforme. Svaki od vozača, koji su trenutno slobodni, koji se nalaze u datom gradu i koji zadovoljavaju traženi broj sjedišta, dobija zahtjev za navedenu vožnju u obliku notifikacije na profil. Vozači sami odlučuju kojeg klijenta će uslužiti. Nakon prihvatanja zahtjeva, svim ostalim vozačima se data notifikacija gasi čime je osigurana nemogućnost da više vozača prihvati istu rutu. Vozač koji je prihvatio zahtjev, posjeduje opciju uvida u trenutnu lokaciju klijenta u obliku forme na kojoj se otvara Bing Maps.
 
 ## **Oznaka kraja vožnje**
 Nakon dolaska na željenu destinaciju koju je precizirao klijent, vozač na dugme označava kraj vožnje. Plaćanje se vrši isključivo gotovinom, a cijena se određuje na osnovu pređene kilometraže.
