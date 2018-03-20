@@ -1,6 +1,8 @@
 # **GRUPA 8: TimPadobranci**
 ## **Tema: e-Taxi**
 
+![logo2](https://user-images.githubusercontent.com/37378671/37659146-7aa819ea-2c4f-11e8-957f-176e84353c55.jpg)
+
 ## **Članovi tima:**
 1. Nedić Marko
 2. Pejović Petar
