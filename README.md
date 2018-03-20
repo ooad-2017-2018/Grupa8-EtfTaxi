@@ -2,9 +2,9 @@
 ## **Tema: e-Taxi**
 
 ## **Članovi tima:**
-1. Plakalović Anja
+1. Nedić Marko
 2. Pejović Petar
-3. Nedić Marko
+3. Plakalović Anja
 
 # **Opis teme**
 e-Taxi je aplikacija koja omogućava jednostavnu i sigurnu vožnju do željenog odredišta u što kraćem vremenskom roku, pri pristupačnim cijenama.\
@@ -101,7 +101,7 @@ Administrator (admin) - Osoba koja nadgleda cjelokupni sistem, te koja ima uvid 
 Vozač - Osoba koja je uposlenik firme e-Taxi, te ima zadatak da po želji klijenta vrši usluge vožnje po unaprijed određenim rutama.\
 Klijent (korisnik) -  Osoba koja koristi navedene usluge koje pruža aplikacija, ali bez dodatnih popusta.\
 Stalni klijent (stalni korisnik) - Osoba koja koristi navedene usluge koje pruža aplikacija, uz dodatne popuste\
-e-Taxi sistem – Sporedni akter koji predstavlja način komuniciranja korisnika (klijenta, vozača, admina i same aplikacije).
+e-Taxi sistem – Sporedni akter koji predstavlja način komuniciranja korisnika (klijenta, vozača, administratora i same aplikacije).
 
 
 
