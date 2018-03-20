@@ -1,4 +1,7 @@
 # **GRUPA 8: TimPadobranci**
+# **TEMA: e-Taxi**
+
+# **Članovi tima:**
 1. Plakalović Anja
 2. Pejović Petar
 3. Nedić Marko
@@ -42,7 +45,7 @@ Bitno je napomenuti da admin ima mogućnost odobravanja zahtjeva za registraciju
 Nakon što je registracija vozača odobrena od strane admina, vozač uređuje vlastiti profil postavljajući dodatne informacije kao što su:\
 •	Model automobila\
 •	Link automobila\
-•	Broj sjedišta u automobilu\\
+•	Broj sjedišta u automobilu\
 •	Model pametnog telefona\
 •	Profilna slika\
 •	Govorni jezici, itd.\
