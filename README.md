@@ -60,7 +60,7 @@ Admin ima mogućnost da blokira određenog vozača u zavisnosti od ukupnog dojma
 ## **Pristup profilima vozača/klijenata**
 Admin ima pristup svim profilima vozača.\
 Vozači imaju pristup isključivo vlastitom profilu.\
-Klijent također ima pristup vlastitom profilu, kao i profilima svih vozača.
+Klijent također ima pristup vlastitom profilu.
 
 ## **Zahtjev za uslugu**
 Klijent najprije šalje zahtjev za uslugu, koja uključuje podatke o pojedinostima vožnje i o željenoj destinaciji kao što su:\
