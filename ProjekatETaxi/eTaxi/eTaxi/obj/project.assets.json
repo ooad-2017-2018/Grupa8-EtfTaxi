@@ -25734,11 +25734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marko\\Desktop\\eTaxi\\eTaxi\\eTaxi.csproj",
+      "projectUniqueName": "C:\\Users\\Marko\\Documents\\ETF\\2G\\4. semestar\\OOAD\\Projekat\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
       "projectName": "eTaxi",
-      "projectPath": "C:\\Users\\Marko\\Desktop\\eTaxi\\eTaxi\\eTaxi.csproj",
+      "projectPath": "C:\\Users\\Marko\\Documents\\ETF\\2G\\4. semestar\\OOAD\\Projekat\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
       "packagesPath": "C:\\Users\\Marko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marko\\Desktop\\eTaxi\\eTaxi\\obj\\",
+      "outputPath": "C:\\Users\\Marko\\Documents\\ETF\\2G\\4. semestar\\OOAD\\Projekat\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

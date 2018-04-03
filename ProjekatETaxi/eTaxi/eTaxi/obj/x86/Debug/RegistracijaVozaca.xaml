@@ -40,7 +40,7 @@
                     <TextBlock x:ConnectionId='6' x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="4" Text="Datum rođenja:" 
                    VerticalAlignment="Bottom" FontSize="20"/>
                     <DatePicker x:ConnectionId='7' x:Name="datePicker" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="5" VerticalAlignment="Top"/>
-                    <Button x:ConnectionId='8' x:Name="button1" Content="Registriraj se" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="7"
+                    <Button x:ConnectionId='8' x:Name="dugmeNastavi1" Content="Nastavi" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="7"
                 VerticalAlignment="Center" Width="230" FontSize="24"/>
                     <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="40" Margin="5" Grid.Row="6" VerticalAlignment="Center"
                     Orientation="Horizontal" Width="270">
@@ -51,7 +51,24 @@
 
             </PivotItem>
             <PivotItem Header="Dodatni podaci">
-  
+                <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Stretch"
+                        Background="Orange">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="3*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                </Grid>
             </PivotItem>
             <PivotItem Header="Podaci o zaposlenju">
                 <Grid/>
