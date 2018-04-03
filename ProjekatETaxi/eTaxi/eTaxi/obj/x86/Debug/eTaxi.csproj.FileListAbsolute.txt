@@ -229,6 +229,8 @@ C:\Users\Marko\Desktop\eTaxi\eTaxi\obj\x86\Debug\RegistracijaVozaca.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\App.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\FormaRegistracija.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\MainPage.xbf
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\NarucivanjeVoznje.xbf
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\ProfilKlijenta.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\RegistracijaKlijenta.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\RegistracijaVozaca.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml
@@ -353,12 +355,17 @@ C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\Projeka
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\eTaxi.csprojResolveAssemblyReference.cache
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\App.g.i.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\App.g.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\FormaRegistracija.g.i.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\FormaRegistracija.g.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MainPage.g.cs
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.g.i.cs
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.g.cs
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProfilKlijenta.g.i.cs
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProfilKlijenta.g.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaKlijenta.g.i.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaKlijenta.g.cs
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaVozaca.g.i.cs
@@ -367,11 +374,15 @@ C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\Projeka
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\App.xaml
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\FormaRegistracija.xaml
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MainPage.xaml
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.xaml
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProfilKlijenta.xaml
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaKlijenta.xaml
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaVozaca.xaml
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\App.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\FormaRegistracija.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MainPage.xbf
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.xbf
+C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProfilKlijenta.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaKlijenta.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\RegistracijaVozaca.xbf
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\XamlSaveStateFile.xml
@@ -453,4 +464,3 @@ C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\Projeka
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\eTaxi.csprojResolveAssemblyReference.cache

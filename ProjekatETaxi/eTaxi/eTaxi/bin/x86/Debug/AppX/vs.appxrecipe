@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T08:34:21.854</Modified>
+      <Modified>2018-04-03T15:37:28.158</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
       <PackagePath>entrypoint\eTaxi.exe</PackagePath>
-      <Modified>2018-04-03T08:34:20.174</Modified>
+      <Modified>2018-04-03T15:37:25.779</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -551,7 +551,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
       <PackagePath>eTaxi.xr.xml</PackagePath>
-      <Modified>2018-04-02T17:02:13.139</Modified>
+      <Modified>2018-04-03T15:37:25.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -560,11 +560,11 @@
     <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T08:34:21.231</Modified>
+      <Modified>2018-04-03T15:37:27.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
       <PackagePath>eTaxi.exe</PackagePath>
-      <Modified>2018-04-03T08:34:21.834</Modified>
+      <Modified>2018-04-03T15:37:28.146</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

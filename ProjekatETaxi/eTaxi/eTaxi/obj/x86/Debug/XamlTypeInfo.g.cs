@@ -132,21 +132,25 @@ namespace eTaxi.eTaxi_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "eTaxi.FormaRegistracija";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "eTaxi.MainPage";
-            _typeNameTable[4] = "eTaxi.RegistracijaKlijenta";
-            _typeNameTable[5] = "eTaxi.RegistracijaVozaca";
+            _typeNameTable[4] = "eTaxi.NarucivanjeVoznje";
+            _typeNameTable[5] = "eTaxi.ProfilKlijentaxaml";
+            _typeNameTable[6] = "eTaxi.RegistracijaKlijenta";
+            _typeNameTable[7] = "eTaxi.RegistracijaVozaca";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::eTaxi.FormaRegistracija);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::eTaxi.MainPage);
-            _typeTable[4] = typeof(global::eTaxi.RegistracijaKlijenta);
-            _typeTable[5] = typeof(global::eTaxi.RegistracijaVozaca);
+            _typeTable[4] = typeof(global::eTaxi.NarucivanjeVoznje);
+            _typeTable[5] = typeof(global::eTaxi.ProfilKlijentaxaml);
+            _typeTable[6] = typeof(global::eTaxi.RegistracijaKlijenta);
+            _typeTable[7] = typeof(global::eTaxi.RegistracijaVozaca);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,8 +187,10 @@ namespace eTaxi.eTaxi_XamlTypeInfo
 
         private object Activate_0_FormaRegistracija() { return new global::eTaxi.FormaRegistracija(); }
         private object Activate_3_MainPage() { return new global::eTaxi.MainPage(); }
-        private object Activate_4_RegistracijaKlijenta() { return new global::eTaxi.RegistracijaKlijenta(); }
-        private object Activate_5_RegistracijaVozaca() { return new global::eTaxi.RegistracijaVozaca(); }
+        private object Activate_4_NarucivanjeVoznje() { return new global::eTaxi.NarucivanjeVoznje(); }
+        private object Activate_5_ProfilKlijentaxaml() { return new global::eTaxi.ProfilKlijentaxaml(); }
+        private object Activate_6_RegistracijaKlijenta() { return new global::eTaxi.RegistracijaKlijenta(); }
+        private object Activate_7_RegistracijaVozaca() { return new global::eTaxi.RegistracijaVozaca(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -218,16 +224,30 @@ namespace eTaxi.eTaxi_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  eTaxi.RegistracijaKlijenta
+            case 4:   //  eTaxi.NarucivanjeVoznje
                 userType = new global::eTaxi.eTaxi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_RegistracijaKlijenta;
+                userType.Activator = Activate_4_NarucivanjeVoznje;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  eTaxi.RegistracijaVozaca
+            case 5:   //  eTaxi.ProfilKlijentaxaml
                 userType = new global::eTaxi.eTaxi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_RegistracijaVozaca;
+                userType.Activator = Activate_5_ProfilKlijentaxaml;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  eTaxi.RegistracijaKlijenta
+                userType = new global::eTaxi.eTaxi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_RegistracijaKlijenta;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  eTaxi.RegistracijaVozaca
+                userType = new global::eTaxi.eTaxi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_RegistracijaVozaca;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
