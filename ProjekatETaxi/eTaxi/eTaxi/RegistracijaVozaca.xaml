@@ -137,8 +137,6 @@
                             Maximum="10"
                             StepFrequency="1"
                             Value="4"/>
-
-
                 </Grid>
             </PivotItem>
         </Pivot>
