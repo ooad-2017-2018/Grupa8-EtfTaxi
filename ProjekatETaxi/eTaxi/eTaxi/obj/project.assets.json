@@ -25729,18 +25729,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Petar\\.nuget\\packages\\": {},
+    "C:\\Users\\Anja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Petar\\source\\repos\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
+      "projectUniqueName": "C:\\Users\\Anja\\Desktop\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
       "projectName": "eTaxi",
-      "projectPath": "C:\\Users\\Petar\\source\\repos\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
-      "packagesPath": "C:\\Users\\Petar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Petar\\source\\repos\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\obj\\",
+      "projectPath": "C:\\Users\\Anja\\Desktop\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\eTaxi.csproj",
+      "packagesPath": "C:\\Users\\Anja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anja\\Desktop\\Grupa8-EtfTaxi\\ProjekatETaxi\\eTaxi\\eTaxi\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25748,7 +25748,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
