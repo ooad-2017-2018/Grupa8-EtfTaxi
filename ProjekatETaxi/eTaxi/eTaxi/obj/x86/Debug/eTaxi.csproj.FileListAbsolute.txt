@@ -454,3 +454,7 @@ C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\Projeka
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\eTaxi.csprojResolveAssemblyReference.cache
+C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\System.Net.Primitives.dll
+C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\System.Private.ServiceModel.dll
+C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\App.xaml
+C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\FormaRegistracija.xaml
