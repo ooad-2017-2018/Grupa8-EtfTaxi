@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-AARM4JP</Machine>
-    <WindowsUser>Anja</WindowsUser>
+    <Machine>DESKTOP-4O7DPLT</Machine>
+    <WindowsUser>Petar</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>68710894-aafe-4315-bb8b-2f05017d2bd2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Marko</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
       <PackagePath>entrypoint\eTaxi.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,68 +370,68 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\eTaxiLogo.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\eTaxiLogo.png">
       <PackagePath>Assets\eTaxiLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiSta.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiSta.png">
       <PackagePath>Assets\taxiSta.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiVozac.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiVozac.png">
       <PackagePath>Assets\taxiVozac.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\neodobren.jpg">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\neodobren.jpg">
       <PackagePath>Assets\neodobren.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\odobren.jpg">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\odobren.jpg">
       <PackagePath>Assets\odobren.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\suspendovan.jpg">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\suspendovan.jpg">
       <PackagePath>Assets\suspendovan.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
       <PackagePath>Assets\taxiKlijent.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
       <PackagePath>eTaxi.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anja\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
+    <AppxPackagedFile Include="C:\Users\Petar\source\repos\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
       <PackagePath>eTaxi.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
