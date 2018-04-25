@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>68710894-aafe-4315-bb8b-2f05017d2bd2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Marko</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>E607623DD13DA4B291AA9992D9EA07362007AE7B55843BF9ED52C0DAEF56ED69</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>68710894-aafe-4315-bb8b-2f05017d2bd2_1.0.0.0_x86__96shpn27z500y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>68710894-aafe-4315-bb8b-2f05017d2bd2_96shpn27z500y!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T15:37:28.158</Modified>
+      <Modified>2018-04-25T15:12:16.623</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
       <PackagePath>entrypoint\eTaxi.exe</PackagePath>
-      <Modified>2018-04-03T15:37:25.779</Modified>
+      <Modified>2018-04-25T15:12:14.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,76 +495,76 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\eTaxiLogo.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\eTaxiLogo.png">
       <PackagePath>Assets\eTaxiLogo.png</PackagePath>
-      <Modified>2018-04-02T14:04:02.696</Modified>
+      <Modified>2018-04-04T11:38:51.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiSta.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiSta.png">
       <PackagePath>Assets\taxiSta.png</PackagePath>
-      <Modified>2018-04-02T14:59:39.457</Modified>
+      <Modified>2018-04-04T11:38:51.631</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiVozac.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiVozac.png">
       <PackagePath>Assets\taxiVozac.png</PackagePath>
-      <Modified>2018-04-02T15:09:21.561</Modified>
+      <Modified>2018-04-04T11:38:51.638</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.610</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.612</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-30T21:59:02.893</Modified>
+      <Modified>2018-04-04T11:38:51.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
       <PackagePath>Assets\taxiKlijent.jpg</PackagePath>
-      <Modified>2018-04-02T14:59:39.470</Modified>
+      <Modified>2018-04-04T11:38:51.625</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-04-02T11:41:04.168</Modified>
+      <Modified>2018-04-04T11:38:51.656</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
       <PackagePath>eTaxi.xr.xml</PackagePath>
-      <Modified>2018-04-03T15:37:25.183</Modified>
+      <Modified>2018-04-10T23:11:01.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T16:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T15:37:27.499</Modified>
+      <Modified>2018-04-25T15:12:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marko\Documents\ETF\2G\4. semestar\OOAD\Projekat\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
       <PackagePath>eTaxi.exe</PackagePath>
-      <Modified>2018-04-03T15:37:28.146</Modified>
+      <Modified>2018-04-25T15:12:16.623</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
