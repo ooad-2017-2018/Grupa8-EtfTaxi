@@ -406,6 +406,15 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\neodobren.jpg">
+      <PackagePath>Assets\neodobren.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\odobren.jpg">
+      <PackagePath>Assets\odobren.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\suspendovan.jpg">
+      <PackagePath>Assets\suspendovan.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
       <PackagePath>Assets\taxiKlijent.jpg</PackagePath>
     </AppxPackagedFile>

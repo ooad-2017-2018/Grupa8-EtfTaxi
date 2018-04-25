@@ -743,3 +743,13 @@ C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\qu
 C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\eTaxi.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\NarucivanjeVoznje.xbf
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\PretragaVozača.xbf
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.g.i.cs
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.g.cs
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\PretragaVozača.g.i.cs
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\PretragaVozača.g.cs
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.xaml
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\PretragaVozača.xaml
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\NarucivanjeVoznje.xbf
+C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\obj\x86\Debug\PretragaVozača.xbf

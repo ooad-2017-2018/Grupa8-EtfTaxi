@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T15:12:16.623</Modified>
+      <Modified>2018-04-25T15:23:41.266</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
       <PackagePath>entrypoint\eTaxi.exe</PackagePath>
-      <Modified>2018-04-25T15:12:14.302</Modified>
+      <Modified>2018-04-25T15:23:39.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -541,6 +541,18 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-04T11:38:51.621</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\neodobren.jpg">
+      <PackagePath>Assets\neodobren.jpg</PackagePath>
+      <Modified>2018-04-25T15:16:17.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\odobren.jpg">
+      <PackagePath>Assets\odobren.jpg</PackagePath>
+      <Modified>2018-04-25T15:16:17.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\suspendovan.jpg">
+      <PackagePath>Assets\suspendovan.jpg</PackagePath>
+      <Modified>2018-04-25T15:16:17.682</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\Assets\taxiKlijent.jpg">
       <PackagePath>Assets\taxiKlijent.jpg</PackagePath>
       <Modified>2018-04-04T11:38:51.625</Modified>
@@ -551,7 +563,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.xr.xml">
       <PackagePath>eTaxi.xr.xml</PackagePath>
-      <Modified>2018-04-10T23:11:01.739</Modified>
+      <Modified>2018-04-25T15:23:38.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -560,11 +572,11 @@
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T15:12:16.002</Modified>
+      <Modified>2018-04-25T15:23:40.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
       <PackagePath>eTaxi.exe</PackagePath>
-      <Modified>2018-04-25T15:12:16.623</Modified>
+      <Modified>2018-04-25T15:23:41.251</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
