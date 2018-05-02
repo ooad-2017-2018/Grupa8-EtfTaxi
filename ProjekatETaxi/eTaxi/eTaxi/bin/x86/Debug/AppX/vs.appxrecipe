@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>E607623DD13DA4B291AA9992D9EA07362007AE7B55843BF9ED52C0DAEF56ED69</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>BB19701D1A8C81D5D09E21DCD9CE5E026E8DC08712FE9294C6CD0CDCBBFEB26C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>68710894-aafe-4315-bb8b-2f05017d2bd2_1.0.0.0_x86__96shpn27z500y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>68710894-aafe-4315-bb8b-2f05017d2bd2_96shpn27z500y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>68710894-aafe-4315-bb8b-2f05017d2bd2</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T15:23:41.266</Modified>
+      <Modified>2018-05-02T16:27:50.435</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\eTaxi.exe">
       <PackagePath>entrypoint\eTaxi.exe</PackagePath>
-      <Modified>2018-04-25T15:23:39.474</Modified>
+      <Modified>2018-05-02T16:27:49.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -572,11 +572,11 @@
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T15:23:40.547</Modified>
+      <Modified>2018-05-02T16:27:50.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Marko\Desktop\Grupa8-EtfTaxi\ProjekatETaxi\eTaxi\eTaxi\bin\x86\Debug\Core\eTaxi.exe">
       <PackagePath>eTaxi.exe</PackagePath>
-      <Modified>2018-04-25T15:23:41.251</Modified>
+      <Modified>2018-05-02T16:27:50.435</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

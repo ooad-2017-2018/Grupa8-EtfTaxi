@@ -46,16 +46,23 @@
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                       
-                    </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="grid1.Background" Value="Blue"/>
+                        <Setter Target="textBoxEMail.Width" Value="300"/>
+                        <Setter Target="passwordBox.Width" Value="300"/>
+                        <Setter Target="dugmePrijaviSe.Width" Value="300"/>
+                        <Setter Target="textBlockMail.FontSize" Value="22"/>
+                        <Setter Target="textBlockLozinka.FontSize" Value="22"/>
+                        <Setter Target="textBoxEMail.FontSize" Value="22"/>
+                        <Setter Target="passwordBox.FontSize" Value="22"/>
+                        <Setter Target="hyper.FontSize" Value="22"/>
+                        <Setter Target="label1.FontSize" Value="22"/>
+                        <Setter Target="lijeviDio.Width" Value="2*"/>
+                        <Setter Target="desniDio.Width" Value="3*"/>                        
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
