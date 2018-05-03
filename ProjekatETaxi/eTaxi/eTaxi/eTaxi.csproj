@@ -95,6 +95,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelView\NarucivanjeVoznje.cs" />
+    <Compile Include="ModelView\Notifikacije.cs" />
+    <Compile Include="ModelView\PretragaVozaca.cs" />
+    <Compile Include="ModelView\Prijava.cs" />
+    <Compile Include="ModelView\Registracija.cs" />
+    <Compile Include="Model\Region.cs" />
+    <Compile Include="Model\Spol.cs" />
+    <Compile Include="Model\StatusVozaca.cs" />
+    <Compile Include="Model\StatusVoznje.cs" />
+    <Compile Include="Model\StatusZaposlenja.cs" />
     <Compile Include="View\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
@@ -177,10 +187,7 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ModelView\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
