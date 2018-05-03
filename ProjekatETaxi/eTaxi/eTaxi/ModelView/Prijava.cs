@@ -8,8 +8,8 @@ namespace eTaxi.ModelView
 {
     public class Prijava
     {
-        public String EMail { get; set; }
-        public String Lozinka { get; set; }
+        public String eMail { get; set; }
+        public String lozinka { get; set; }
 
         // public void Prijava(String eMail, String lozinka)
         // ako je prijava validna otvaranje nove forme

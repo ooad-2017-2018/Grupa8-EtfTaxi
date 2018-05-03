@@ -8,7 +8,7 @@ namespace eTaxi.ModelView
 {
     public class PretragaVozaca
     {
-        public String ImeIPrezime { get; set; }
+        public String imeIPrezime { get; set; }
 
         //  public List<Vozac> DajVozace (String ime, bool odobreni, bool neodobreni, bool suspendovani) 
         // vraca listu pretrazeni vozaca

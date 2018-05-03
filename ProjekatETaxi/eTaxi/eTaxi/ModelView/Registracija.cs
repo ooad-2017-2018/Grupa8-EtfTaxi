@@ -11,25 +11,25 @@ namespace eTaxi.ModelView
     {
 
     // Osnovni podaci (klijent)
-        public String Ime { get; set; }
-        public String Prezime { get; set; }
-        public String EMail { get; set; }
-        public String Lozinka { get; set; }
-        public String PotvrdaLozinke { get; set; }
-        public DateTime DatumRodenja { get; set; }
-        public Spol Spol { get; set; }
+        public String ime { get; set; }
+        public String prezime { get; set; }
+        public String eMail { get; set; }
+        public String lozinka { get; set; }
+        public String potvrdaLozinke { get; set; }
+        public DateTime datumRodenja { get; set; }
+        public Spol spol { get; set; }
 
     // Dodatni podaci
         public String JMBG { get; set; }
-        public String BrojTelefona { get; set; }
-        public String AdresaStanovanja { get; set; }
-        public String BrojKartice { get; set; }
-        public Region Region { get; set; }
+        public String brojTelefona { get; set; }
+        public String adresaStanovanja { get; set; }
+        public String brojKartice { get; set; }
+        public Region region { get; set; }
 
     // Podaci o zaposlenju
-        public String ModelAutomobila { get; set; }
-        public int BrojSjedista { get; set; }
-        public String RadnoIskustvo { get; set; }
+        public String modelAutomobila { get; set; }
+        public int brojSjedista { get; set; }
+        public String radnoIskustvo { get; set; }
 
         //private bool validacijaRegistracije()
         //public void DodajRegistriranog (Osoba osoba)

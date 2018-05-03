@@ -100,11 +100,18 @@
     <Compile Include="ModelView\PretragaVozaca.cs" />
     <Compile Include="ModelView\Prijava.cs" />
     <Compile Include="ModelView\Registracija.cs" />
+    <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\Auto.cs" />
+    <Compile Include="Model\Klijent.cs" />
+    <Compile Include="Model\Osoba.cs" />
     <Compile Include="Model\Region.cs" />
+    <Compile Include="Model\Sistem.cs" />
     <Compile Include="Model\Spol.cs" />
     <Compile Include="Model\StatusVozaca.cs" />
     <Compile Include="Model\StatusVoznje.cs" />
     <Compile Include="Model\StatusZaposlenja.cs" />
+    <Compile Include="Model\Vozac.cs" />
+    <Compile Include="Model\Voznja.cs" />
     <Compile Include="View\Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>

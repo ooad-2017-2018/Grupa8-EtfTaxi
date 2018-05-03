@@ -9,9 +9,9 @@ namespace eTaxi.ModelView
     public class NarucivanjeVoznje
     {
 
-        public String Lokacija { get; set; }
-        public String Destinacija { get; set; }
-        public int BrojPutnika { get; set; }
+        public String lokacija { get; set; }
+        public String destinacija { get; set; }
+        public int brojPutnika { get; set; }
 
         //private bool imaLiSlobodnih()
         // private bool validanUnos()
