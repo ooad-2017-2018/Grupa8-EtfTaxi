@@ -27,12 +27,13 @@
                 <RowDefinition Height="0.8*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="180*"/>
+                <ColumnDefinition Width="131*"/>
+                <ColumnDefinition Width="49*"/>
             </Grid.ColumnDefinitions>
 
             <Ellipse x:ConnectionId='10' x:Name="slikaProfila" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                     Width="130" Height="130">
+                     Width="130" Height="130" Margin="25,4,25,4.667">
                 <Ellipse.Fill>
                     <ImageBrush ImageSource="/Assets/eTaxiLogo.png" Stretch="Fill" >
                     </ImageBrush>
@@ -40,13 +41,13 @@
             </Ellipse>
 
             <Button x:ConnectionId='11' x:Name="buttonIzmijeniSliku" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Content="Izmijeni sliku" FontSize="18" Padding="15,4,15,4"/>
-            <TextBlock x:ConnectionId='12' x:Name="labelaIme"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="5"
+                    Content="Izmijeni sliku" FontSize="18" Padding="15,4,15,4" Margin="22,9.333,22,10"/>
+            <TextBlock x:ConnectionId='12' x:Name="labelaIme"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="67,16,17.18,15.333"
                        Text="Ime" VerticalAlignment="Center" FontSize="28"/>
-            <TextBlock x:ConnectionId='13' x:Name="labelaPrezime"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="5"
-                    Text="Prezime" VerticalAlignment="Center" FontSize="28"/>
-            <TextBlock x:ConnectionId='14' x:Name="labelaRegion"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="5" 
-                   Text="Region" VerticalAlignment="Center" FontSize="28"/>
+            <TextBlock x:ConnectionId='13' x:Name="labelaPrezime"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="41,15.667,40,15.667"
+                    Text="Prezime" VerticalAlignment="Center" FontSize="28" Grid.ColumnSpan="2"/>
+            <TextBlock x:ConnectionId='14' x:Name="labelaRegion"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="47,9.333,46,8" 
+                   Text="Region" VerticalAlignment="Center" FontSize="28" Grid.ColumnSpan="2"/>
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="0">
