@@ -36,7 +36,7 @@
          ></TextBlock>
 
         <CheckBox Grid.Row="2" Grid.Column="0" Name="MyCheckBox" HorizontalAlignment="Center" VerticalAlignment="Center"
-                  Content="Označi sve"/>
+                  Content="Označi sve"  Click="MyCheckBox_Click"/>
        
 
         <CheckBox Grid.Row="3" Grid.Column="0" Name="MyCheckBox1" HorizontalAlignment="Center" VerticalAlignment="Center"

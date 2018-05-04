@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot Title="Pivot">
+        <Pivot Title="">
             <PivotItem Header="Osnovni podaci">
                 <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Stretch"
                         Background="Orange">
@@ -126,7 +126,7 @@
                              TextWrapping="Wrap"
                              AcceptsReturn="True"
                              Width="270" Height="140"></TextBox>
-                    
+
                     <Button Name = "buttonNazadZadnja" Content="Nazad" Width="135" Grid.Column="0" HorizontalAlignment="Center" Margin ="35,5,5,5" Grid.Row="4" VerticalAlignment="Center"/>
                     <Button Name = "buttonNastaviZadnja" Content="Nastavi" Width ="135" Grid.Column="1" HorizontalAlignment="Center" Margin ="5,5,35,5" Grid.Row="7" VerticalAlignment="Center"/>
                     <Slider Grid.Column="2" HorizontalAlignment="Center"

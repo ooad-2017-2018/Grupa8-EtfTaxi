@@ -1,11 +1,11 @@
 App.xbf
 View\AdminovPregledProfilaVozaca.xbf
-View\FormaRegistracija.xbf
 View\NarucivanjeVoznje.xbf
 View\Pocetna.xbf
 View\PretragaVozaca.xbf
 View\ProfilAdministratora.xbf
 View\ProfilKlijenta.xbf
 View\ProfilVozaca.xbf
+View\Registracija.xbf
 View\RegistracijaKlijenta.xbf
 View\RegistracijaVozaca.xbf

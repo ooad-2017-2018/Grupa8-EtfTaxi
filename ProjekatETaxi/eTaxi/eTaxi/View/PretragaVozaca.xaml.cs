@@ -26,5 +26,25 @@ namespace eTaxi
         {
             this.InitializeComponent();
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+        }
+
+        private void MyCheckBox_Click(object sender, RoutedEventArgs e)
+        {
+            if(MyCheckBox.IsChecked == true)
+            {
+                MyCheckBox1.IsChecked = MyCheckBox2.IsChecked = MyCheckBox3.IsChecked = true;
+                MyCheckBox.Content = "Odznači sve";
+            }
+
+            else
+            {
+                MyCheckBox1.IsChecked = MyCheckBox2.IsChecked = MyCheckBox3.IsChecked = false;
+                MyCheckBox.Content = "Označi sve";
+            }
+        }
     }
 }

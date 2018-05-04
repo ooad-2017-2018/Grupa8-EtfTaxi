@@ -27,7 +27,7 @@ namespace eTaxi.Model
             Klijenti = new List<Klijent>();
             Vozaci = new List<Vozac>();
             Voznje = new List<Voznja>();
-            Administrator = new Administrator();
+            Administrator = new Administrator("Ime", "Prezime", "admin@etf.unsa.ba", "admin", null);
         }
     
     }
