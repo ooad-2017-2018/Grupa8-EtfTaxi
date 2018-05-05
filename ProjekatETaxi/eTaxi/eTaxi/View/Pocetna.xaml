@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid x:Name="grid1" Background="Orange">
-        
+
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
                 Grid.Row="3" FontSize="30" Height="50"
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click"/>
         <TextBlock x:Name="textBlockLozinka" HorizontalAlignment="Right" Margin="15,15,30,15" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI"
                    Grid.Row="2" FontSize="20"/>
         <TextBlock x:Name="textBlockMail" HorizontalAlignment="Right" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Bottom"
@@ -24,9 +24,11 @@
         <TextBlock x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" Grid.Row="4" Text="Nemate korisnički račun?" 
                    VerticalAlignment="Bottom" FontSize="22" />
         <HyperlinkButton x:Name="hyper" Content="Registrujte se!" Grid.ColumnSpan="2" HorizontalAlignment="Center"
-                         Click = "hyper_Click" Margin="15" Grid.Row="5" VerticalAlignment="Top" FontSize="22"/>
+                         Click = "hyper_Click" Margin="15" FontStyle="Oblique" Grid.Row="5" VerticalAlignment="Top" FontSize="22"/>
         <Image x:Name="imageLogo" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0" Grid.Row="0" VerticalAlignment="Center"
                Source="Assets/eTaxiLogo.png" Stretch="Fill"/>
+        <TextBlock Grid.Column="0" Grid.Row="5" x:Name="Greska" Foreground="Red" Margin="5" 
+                   Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />

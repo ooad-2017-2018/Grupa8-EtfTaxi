@@ -26,5 +26,129 @@ namespace eTaxi
         {
             this.InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            string pgreske = "";
+            if(!validirajIme(textBoxIme.Text, ref pgreske) || !validirajPrezime(textBoxIme.Text, ref pgreske) || 
+               !validirajEMail(textBoxEMail.Text, ref pgreske) || !validirajPassword(passwordBoxLozinka.Password, ref pgreske) ||
+               !validirajPotvrduPassworda(passwordBoxLozinka.Password, passwordBoxPotvrdaLozinke.Password, ref pgreske) || 
+               !
+            {
+
+            }
+        }
+
+        public bool validirajIme(string tekst, ref string imeGreska)
+        {
+            imeGreska = "";
+
+            if(tekst.Length == 0)
+            {
+                imeGreska = "Unesite ime!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajPrezime(string tekst, ref string prezimeGreska)
+        {
+            prezimeGreska = "";
+
+            if (tekst.Length == 0)
+            {
+                prezimeGreska = "Unesite prezime!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajEMail(string tekst, ref string pgreske)
+        {
+            bool imaLudogA = false;
+            pgreske = "";
+
+            if (tekst.Length == 0)
+            {
+                pgreske = "Unesite e-mail!";
+                return false;
+            }
+
+            foreach (char c in tekst)
+            {
+                if (c == '@')
+                {
+                    imaLudogA = true;
+                }
+            }
+
+            if (tekst.Length < 8 || !imaLudogA)
+            {
+                pgreske = "Neispravan unos e-maila!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajPassword(string tekst, ref string pgreske2)
+        {
+            pgreske2 = "";
+
+            if (tekst.Length == 0)
+            {
+                pgreske2 = "Unesite password!";
+                return false;
+            }
+
+            if (tekst.Length < 8)
+            {
+                pgreske2 = "Neispravan unos passworda!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajPotvrduPassworda (string lozinka, string potvrda, ref string potvrdaGreska)
+        {
+            potvrdaGreska = "";
+
+            if(lozinka != potvrda)
+            {
+                potvrdaGreska = "Potvrda lozinke i lozinka nisu iste!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajRadioButton(ref string radioButtonGreska)
+        {
+            radioButtonGreska = "";
+
+            if(radio1.IsChecked == radio2.IsChecked == false)
+            {
+                radioButtonGreska = "Odaberite spol!";
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool validirajDatum(DateTime datum, ref string datumGreska)
+        {
+            datumGreska = "";
+
+            if(datum.Year > DateTime.Now.Year - 18)
+            {
+                datumGreska = "Klijent mora biti punoljetan!";
+                return false;
+            }
+
+            return true;
+        }
     }
 }
