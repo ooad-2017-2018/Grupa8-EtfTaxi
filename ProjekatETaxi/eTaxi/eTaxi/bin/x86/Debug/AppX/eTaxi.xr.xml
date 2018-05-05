@@ -115,7 +115,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Source" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="eTaxi.NarucivanjeVoznje" />
@@ -128,6 +127,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="PasswordChar" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
@@ -185,7 +186,7 @@
     </RootType>
     <RootType FullName="eTaxi.RegistracijaKlijenta" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
-      <RootProperty Name="Title" />
+      <RootProperty Name="IsLocked" />
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
@@ -198,6 +199,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsDropDownOpen" />
     </RootType>
     <RootType FullName="eTaxi.RegistracijaVozaca" />
   </Roots.RootTypes>

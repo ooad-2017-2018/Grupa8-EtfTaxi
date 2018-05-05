@@ -46,7 +46,7 @@
             <RadioButton x:Name="radio1" Content="Žensko" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0"/>
             <RadioButton x:Name="radio2" Content="Muško" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="15,0,0,0"/>
         </StackPanel>
-        <TextBlock Grid.Column="0" Grid.Row="7" x:Name="Greska" Foreground="Red" Margin="5" Text="hahaha"
+        <TextBlock Grid.Column="0" Grid.Row="7" x:Name="Greska" Foreground="Red" Margin="5"
                    Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
 
 

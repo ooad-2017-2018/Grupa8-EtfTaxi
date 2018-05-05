@@ -8,9 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot Title="">
+        <Pivot x:Name ="Pivot"
+              IsLocked="True"  >
+           
             <PivotItem Header="Osnovni podaci">
-                <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Stretch"
+                <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Center"
                         Background="Orange">
 
                     <Grid.RowDefinitions>
@@ -21,7 +23,7 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
-                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="2*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -33,15 +35,15 @@
                  Width="130" FontSize="20" Grid.Row="0" Grid.Column="1"/>
                     <TextBox x:Name="textBoxEMail" HorizontalAlignment="Center" Margin="5" PlaceholderText="E-mail" 
                  VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="1" Grid.ColumnSpan="2"/>
-                    <TextBox x:Name="textBoxLozinka" HorizontalAlignment="Center" Margin="5" PlaceholderText="Lozinka" 
-                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="2" Grid.ColumnSpan="2"/>
-                    <TextBox x:Name="textBoxPotvrdaLozinke" HorizontalAlignment="Center" Margin="5" PlaceholderText="Potvrda lozinke" 
-                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="3" Grid.ColumnSpan="2"/>
+                    <PasswordBox x:Name="passwordBoxLozinka" HorizontalAlignment="Center" Margin="5" PlaceholderText="Lozinka" 
+                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="2" Grid.ColumnSpan="2" PasswordChar="*"/>
+                    <PasswordBox x:Name="passwordBoxPotvrdaLozinke" HorizontalAlignment="Center" Margin="5" PlaceholderText="Potvrda lozinke" 
+                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="3" Grid.ColumnSpan="2" PasswordChar="*"/>
                     <TextBlock x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="4" Text="Datum rođenja:" 
                    VerticalAlignment="Bottom" FontSize="20"/>
                     <DatePicker x:Name="datePicker" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="5" VerticalAlignment="Top"/>
                     <Button x:Name="dugmeNastavi1" Content="Nastavi" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="7"
-                VerticalAlignment="Center" Width="230" FontSize="24"/>
+                VerticalAlignment="Center" Width="230" FontSize="24" Click="dugmeNastavi1_Click"/>
                     <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="40" Margin="5" Grid.Row="6" VerticalAlignment="Center"
                     Orientation="Horizontal" Width="270">
                         <RadioButton x:Name="radio1" Content="Žensko" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0"/>
@@ -52,7 +54,7 @@
             </PivotItem>
             <PivotItem Header="Dodatni podaci">
                 <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Stretch"
-                        Background="Orange">
+                        Background="Orange" Margin="0,40,0,32">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*" />
@@ -95,9 +97,9 @@
                                Margin="35,5,0,0"
                                VerticalAlignment="Center"/>
                     <ComboBox Name="cBoxRegioni" Grid.ColumnSpan="2" HorizontalAlignment="Center" Width="270" Margin="5" Grid.Row="5" 
-                              VerticalAlignment="Top"/>
-                    <Button Name = "buttonNazad" Content="Nazad" Width="135" Grid.Column="0" HorizontalAlignment="Center" Margin ="35,5,5,5" Grid.Row="7" VerticalAlignment="Center"/>
-                    <Button Name = "buttonNastavi" Content="Nastavi" Width ="135" Grid.Column="1" HorizontalAlignment="Center" Margin ="5,5,35,5" Grid.Row="7" VerticalAlignment="Center"/>
+                              VerticalAlignment="Top" ItemsSource="" IsDropDownOpen="False" />
+                    <Button Name = "buttonNazad" Click="buttonNazad_Click" Content="Nazad" Width="135" Grid.Column="0" HorizontalAlignment="Center" Margin ="35,5,5,5" Grid.Row="7" VerticalAlignment="Center"/>
+                    <Button Name = "buttonNastavi" Click="buttonNastavi_Click" Content="Nastavi" Width ="135" Grid.Column="1" HorizontalAlignment="Center" Margin ="5,5,35,5" Grid.Row="7" VerticalAlignment="Center"/>
 
 
                 </Grid>
@@ -113,6 +115,7 @@
                         <RowDefinition Height="3*" />
                         <RowDefinition Height="*" />
 
+
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -127,8 +130,8 @@
                              AcceptsReturn="True"
                              Width="270" Height="140"></TextBox>
 
-                    <Button Name = "buttonNazadZadnja" Content="Nazad" Width="135" Grid.Column="0" HorizontalAlignment="Center" Margin ="35,5,5,5" Grid.Row="4" VerticalAlignment="Center"/>
-                    <Button Name = "buttonNastaviZadnja" Content="Nastavi" Width ="135" Grid.Column="1" HorizontalAlignment="Center" Margin ="5,5,35,5" Grid.Row="7" VerticalAlignment="Center"/>
+                    <Button Name = "buttonNazadZadnja" Click="buttonNazadZadnja_Click" Content="Nazad" Width="135" Grid.Column="0" HorizontalAlignment="Center" Margin ="35,5,5,5" Grid.Row="4" VerticalAlignment="Center"/>
+                    <Button Name = "buttonNastaviZadnja" Click="buttonNastaviZadnja_Click" Content="Potvrdi" Width ="135" Grid.Column="1" HorizontalAlignment="Center" Margin ="5,5,35,5" Grid.Row="7" VerticalAlignment="Center"/>
                     <Slider Grid.Column="2" HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             Margin="5" Grid.Row="1" 
@@ -139,7 +142,11 @@
                             Value="4"/>
                 </Grid>
             </PivotItem>
+          
         </Pivot>
-
+        <TextBlock x:Name="Greska" Foreground="Red" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                   Margin="10"/>
+        <Button x:Name="Povratak" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="15, 45, 10, 50" Content="Povratak nazad" Click="Povratak_Click"/>
     </Grid>
 </Page>

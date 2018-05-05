@@ -30,12 +30,16 @@ namespace eTaxi
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             string pgreske = "";
-            if(!validirajIme(textBoxIme.Text, ref pgreske) || !validirajPrezime(textBoxIme.Text, ref pgreske) || 
+            if(!validirajIme(textBoxIme.Text, ref pgreske) || !validirajPrezime(textBoxPrezime.Text, ref pgreske) || 
                !validirajEMail(textBoxEMail.Text, ref pgreske) || !validirajPassword(passwordBoxLozinka.Password, ref pgreske) ||
                !validirajPotvrduPassworda(passwordBoxLozinka.Password, passwordBoxPotvrdaLozinke.Password, ref pgreske) || 
-               !
+               !validirajDatum(datePicker.Date, ref pgreske) || !validirajRadioButton(ref pgreske))
             {
-
+                Greska.Text = pgreske;
+            }
+            else
+            {
+                Greska.Text = "";
             }
         }
 
@@ -129,7 +133,7 @@ namespace eTaxi
         {
             radioButtonGreska = "";
 
-            if(radio1.IsChecked == radio2.IsChecked == false)
+            if(radio1.IsChecked == false && radio2.IsChecked == false)
             {
                 radioButtonGreska = "Odaberite spol!";
                 return false;
@@ -138,14 +142,18 @@ namespace eTaxi
             return true;
         }
 
-        public bool validirajDatum(DateTime datum, ref string datumGreska)
+        public bool validirajDatum(DateTimeOffset datum, ref string datumGreska)
         {
             datumGreska = "";
 
-            if(datum.Year > DateTime.Now.Year - 18)
+            if(datum.Year > DateTimeOffset.Now.Year - 18)
             {
                 datumGreska = "Klijent mora biti punoljetan!";
                 return false;
+            }
+            else
+            {
+                datumGreska = DateTimeOffset.Now.Offset.ToString();
             }
 
             return true;

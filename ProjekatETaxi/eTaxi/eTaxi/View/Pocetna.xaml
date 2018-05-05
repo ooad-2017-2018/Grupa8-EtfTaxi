@@ -25,10 +25,10 @@
                    VerticalAlignment="Bottom" FontSize="22" />
         <HyperlinkButton x:Name="hyper" Content="Registrujte se!" Grid.ColumnSpan="2" HorizontalAlignment="Center"
                          Click = "hyper_Click" Margin="15" FontStyle="Oblique" Grid.Row="5" VerticalAlignment="Top" FontSize="22"/>
-        <Image x:Name="imageLogo" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0" Grid.Row="0" VerticalAlignment="Center"
-               Source="Assets/eTaxiLogo.png" Stretch="Fill"/>
         <TextBlock Grid.Column="0" Grid.Row="5" x:Name="Greska" Foreground="Red" Margin="5" 
                    Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <Image x:Name="imageLogo" Grid.ColumnSpan="2" Grid.Row="0"
+               Source="Assets/eTaxi.png" Stretch="Fill"/>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />
@@ -65,7 +65,7 @@
                         <Setter Target="hyper.FontSize" Value="22"/>
                         <Setter Target="label1.FontSize" Value="22"/>
                         <Setter Target="lijeviDio.Width" Value="2*"/>
-                        <Setter Target="desniDio.Width" Value="3*"/>                        
+                        <Setter Target="desniDio.Width" Value="3*"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
