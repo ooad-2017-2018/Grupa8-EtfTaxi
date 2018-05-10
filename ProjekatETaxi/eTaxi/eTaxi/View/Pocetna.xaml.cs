@@ -4,8 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using eTaxi.Model;
+using Microsoft.WindowsAzure.MobileServices;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,6 +25,9 @@ namespace eTaxi
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        IMobileServiceTable<Glupa> GlupaTabela;
+
         public static MainPage Glavna;
         public static Sistem sistem = new Sistem();
 
@@ -30,6 +35,10 @@ namespace eTaxi
         {
             this.InitializeComponent();
             Glavna = this;
+            GlupaTabela = App.MobileService.GetTable<Glupa>();
+
+          //  imageLogo.Source = "Assets/eTaxi.png";
+
         }
 
         private void hyper_Click(object sender, RoutedEventArgs e)
@@ -39,20 +48,28 @@ namespace eTaxi
 
         private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
         {
-            string pgreske = "";
-   
-            if (!validirajEMail(textBoxEMail.Text, ref pgreske))
-            {
-                Greska.Text = pgreske;
-            }
-            else if (!validirajPassword(passwordBox.Password.ToString(), ref pgreske))
-            {
-                Greska.Text = pgreske;
-            }
-            else
-            {
-                Greska.Text = "";
-            }
+
+            /*Glupa glupan = new Glupa("glupan", "glupovic");
+
+            GlupaTabela.InsertAsync(glupan);
+
+            MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
+            msgDialog.ShowAsync();*/
+
+             string pgreske = "";
+
+             if (!validirajEMail(textBoxEMail.Text, ref pgreske))
+             {
+                 Greska.Text = pgreske;
+             }
+             else if (!validirajPassword(passwordBox.Password.ToString(), ref pgreske))
+             {
+                 Greska.Text = pgreske;
+             }
+             else
+             {
+                 Greska.Text = "";
+             }
         }
 
         public bool validirajEMail(string tekst, ref string pgreske)

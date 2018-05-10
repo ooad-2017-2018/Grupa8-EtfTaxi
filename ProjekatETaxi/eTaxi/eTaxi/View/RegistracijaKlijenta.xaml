@@ -20,12 +20,15 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="3*" />
+            <RowDefinition Height="1.2*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                   Margin="20" Text="Unesite podatke:" FontSize="25" Foreground="DarkBlue"/>
         <TextBox x:Name="textBoxIme" HorizontalAlignment="Right" Margin="5" PlaceholderText="Ime" VerticalAlignment="Bottom"
                  Width="130" FontSize="20" />
         <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="5" PlaceholderText="Prezime" VerticalAlignment="Bottom"
@@ -48,6 +51,8 @@
         </StackPanel>
         <TextBlock Grid.Column="0" Grid.Row="7" x:Name="Greska" Foreground="Red" Margin="5"
                    Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <Button Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Margin="15,0,0,0"
+                Height="37" Content="Natrag" FontSize="22" Padding="0" Background="LightSlateGray" Click="Button_Click"/>
 
 
     </Grid>

@@ -37,7 +37,7 @@ namespace eTaxi
 
             cBoxRegioni.ItemsSource = regioni;
             cBoxRegioni.SelectedIndex = 0;
-            Pivot.SelectedIndex = 1;            // ne zaboravi maknut
+            Pivot.SelectedIndex = 0;     
         }
 
         private void dugmeNastavi1_Click(object sender, RoutedEventArgs e)
@@ -344,6 +344,11 @@ namespace eTaxi
             }
 
             return true;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Registracija));
         }
     }
 }

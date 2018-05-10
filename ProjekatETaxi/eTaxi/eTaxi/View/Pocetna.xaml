@@ -23,13 +23,13 @@
                      VerticalAlignment="Top" Width="150" PasswordChar="*"/>
         <TextBlock x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" Grid.Row="4" Text="Nemate korisnički račun?" 
                    VerticalAlignment="Bottom" FontSize="22" />
-        <HyperlinkButton x:Name="hyper" Content="Registrujte se!" Grid.ColumnSpan="2" HorizontalAlignment="Center"
+        <HyperlinkButton x:Name="hyper" Content="Registrujte se kao.." Grid.ColumnSpan="2" HorizontalAlignment="Center"
                          Click = "hyper_Click" Margin="15" FontStyle="Oblique" Grid.Row="5" VerticalAlignment="Top" FontSize="22"/>
         <TextBlock Grid.Column="0" Grid.Row="5" x:Name="Greska" Foreground="Red" Margin="5" 
                    Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
-        <Image x:Name="imageLogo" Grid.ColumnSpan="2" Grid.Row="0"
-               Source="Assets/eTaxi.png" Stretch="Fill"/>
-
+        <Image x:Name="imageLogo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+               Source="/Assets/eTaxi.png" Stretch="Fill"/>
+      
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />
             <RowDefinition Height="*" />

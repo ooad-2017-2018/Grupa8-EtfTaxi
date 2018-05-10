@@ -163,6 +163,14 @@
     <RootType FullName="eTaxi.ProfilAdministratora" />
     <RootType FullName="eTaxi.ProfilKlijenta" />
     <RootType FullName="eTaxi.ProfilVozaca" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
     <RootType FullName="eTaxi.Registracija" />
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="HorizontalAlignment" />

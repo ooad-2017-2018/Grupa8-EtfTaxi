@@ -102,6 +102,7 @@
     <Compile Include="ModelView\Registracija.cs" />
     <Compile Include="Model\Administrator.cs" />
     <Compile Include="Model\Auto.cs" />
+    <Compile Include="Model\Glupa.cs" />
     <Compile Include="Model\Klijent.cs" />
     <Compile Include="Model\Osoba.cs" />
     <Compile Include="Model\Region.cs" />
@@ -214,6 +215,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>

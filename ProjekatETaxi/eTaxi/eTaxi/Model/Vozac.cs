@@ -24,7 +24,9 @@ namespace eTaxi.Model
 
         static int globalID = 1;             // autoinkrement ID
 
-        public Vozac(string ime, string prezime, string eMail, string lozinka, Image slika) : base(ime, prezime, eMail, lozinka, slika) {
+        public Vozac(string ime, string prezime, string eMail, string lozinka, string slika) 
+            : base(ime, prezime, eMail, lozinka, slika)
+        {
             Id = globalID;
             globalID += 1;
             Komentari = new List<String>();

@@ -8,9 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot x:Name ="Pivot"
-              IsLocked="True"  >
-           
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*" />
+            <RowDefinition Height="1.2*" />
+        </Grid.RowDefinitions>
+
+        <Pivot x:Name ="Pivot" IsLocked="True" >
+
             <PivotItem Header="Osnovni podaci">
                 <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Center"
                         Background="Orange">
@@ -29,6 +34,9 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                   Margin="20" Text="Unesite podatke:" FontSize="25" Foreground="DarkBlue"/>
                     <TextBox x:Name="textBoxIme" HorizontalAlignment="Right" Margin="5" PlaceholderText="Ime" VerticalAlignment="Bottom"
                         Width="130" FontSize="20" />
                     <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="5" PlaceholderText="Prezime" VerticalAlignment="Bottom"
@@ -50,8 +58,8 @@
                         <RadioButton x:Name="radio2" Content="Muško" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="15,0,0,0"/>
                     </StackPanel>
                 </Grid>
-
             </PivotItem>
+            
             <PivotItem Header="Dodatni podaci">
                 <Grid HorizontalAlignment="Stretch" Height="520" VerticalAlignment="Stretch"
                         Background="Orange" Margin="0,40,0,32">
@@ -69,6 +77,9 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                               Margin="20" Text="Unesite podatke:" FontSize="25" Foreground="DarkBlue"/>
                     <TextBox Name ="textBoxJMBG" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5,5,5,10" Grid.Row ="0" 
                              FontSize = "20" 
                              VerticalAlignment="Bottom"
@@ -122,6 +133,8 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Grid/>
+                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                               Margin="20" Text="Unesite podatke:" FontSize="25" Foreground="DarkBlue"/>
                     <TextBox Name ="textBoxModel" Grid.ColumnSpan="2" HorizontalAlignment="Center" PlaceholderText ="Model automobila" Width="270" FontSize ="20" Margin="30" Grid.Row="0" VerticalAlignment="Bottom"/>
                     <TextBlock Name ="labelSjedista" Margin ="5" Grid.Column ="0" HorizontalAlignment="Right" Grid.Row="1" FontSize ="20" Text="Broj sjedišta:" VerticalAlignment="Center"/>
                     <TextBlock Name ="labelIskustvo" Margin ="5" Grid.Column ="0" HorizontalAlignment="Right" Grid.Row="2" FontSize ="20" Text="Radno iskustvo:" VerticalAlignment="Center"/>
@@ -146,7 +159,8 @@
         </Pivot>
         <TextBlock x:Name="Greska" Foreground="Red" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"
                    Margin="10"/>
-        <Button x:Name="Povratak" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"
-                Margin="15, 45, 10, 50" Content="Povratak nazad" Click="Povratak_Click"/>
+        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Margin="15,0,0,0"
+                Height="37" Content="Natrag" FontSize="22" Padding="0" Background="LightSlateGray" Click="Button_Click"/>
+
     </Grid>
 </Page>

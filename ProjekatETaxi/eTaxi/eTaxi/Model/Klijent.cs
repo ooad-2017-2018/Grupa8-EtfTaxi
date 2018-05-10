@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace eTaxi.Model
 {
     public class Klijent : Osoba
     {
-        Spol Spol { get; set; }
-        DateTime DatumRodjenja { get; set; }
-        bool Stalni { get; set; }
-        int Id { get; set; }
+        public String spol { get; set; }
+        public String datum_rodenja { get; set; }
+        public Boolean stalni { get; set; }
+        public String id { get; set; }
 
-        static int globalID = 1;
-
-        public Klijent() : base(null, null, null, null, null)
+        public Klijent(string ime, string prezime, string email, string lozinka, string slika, string spol, String datumRodjenja, bool stalni)
+            : base(ime, prezime, email, lozinka, slika)
         {
-            Id = globalID;
-            globalID += 1;
+            this.spol = spol;
+            this.datum_rodenja = datumRodjenja;
+            this.stalni = stalni;
         }
     }
 }

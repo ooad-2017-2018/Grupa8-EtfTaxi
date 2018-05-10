@@ -17,15 +17,6 @@ namespace eTaxi.Model
         int BrojPutnika { get; set; }
         StatusVoznje StatusVoznje { get; set; }
         int Id { get; set; }
-
-        static int globalID = 1;
-
-        public Voznja()
-        {
-            Vozac = new Vozac();
-            Klijent = new Klijent();
-            Id = globalID;
-            globalID += 1;
-        }
+       
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 namespace eTaxi.Model
 {
@@ -13,6 +15,8 @@ namespace eTaxi.Model
         List<Vozac> Vozaci { get; set; }
         List<Voznja> Voznje { get; set; }
         Administrator Administrator { get; set; }
+
+        
 
         public Sistem(List<Klijent> klijenti, List<Vozac> vozaci, List<Voznja> voznje, Administrator administrator)
         {

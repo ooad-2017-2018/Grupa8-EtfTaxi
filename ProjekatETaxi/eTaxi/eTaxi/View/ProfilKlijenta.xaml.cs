@@ -22,6 +22,7 @@ namespace eTaxi
     /// </summary>
     public sealed partial class ProfilKlijenta : Page
     {
+
         public ProfilKlijenta()
         {
             this.InitializeComponent();

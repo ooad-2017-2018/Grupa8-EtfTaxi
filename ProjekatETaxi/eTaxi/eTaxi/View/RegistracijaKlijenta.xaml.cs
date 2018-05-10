@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using eTaxi.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,13 +25,20 @@ namespace eTaxi
     /// </summary>
     public sealed partial class RegistracijaKlijenta : Page
     {
+
+        IMobileServiceTable<Klijent> klijentiTabela;
+
         public RegistracijaKlijenta()
         {
             this.InitializeComponent();
+            klijentiTabela = App.MobileService.GetTable<Klijent>();
+            datePicker.Date = new DateTime(2018, 1, 1);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            bool validacijaUspjesna = false;
+
             string pgreske = "";
             if(!validirajIme(textBoxIme.Text, ref pgreske) || !validirajPrezime(textBoxPrezime.Text, ref pgreske) || 
                !validirajEMail(textBoxEMail.Text, ref pgreske) || !validirajPassword(passwordBoxLozinka.Password, ref pgreske) ||
@@ -36,11 +46,56 @@ namespace eTaxi
                !validirajDatum(datePicker.Date, ref pgreske) || !validirajRadioButton(ref pgreske))
             {
                 Greska.Text = pgreske;
+                validacijaUspjesna = false;
             }
             else
             {
                 Greska.Text = "";
+                validacijaUspjesna = true;
             }
+
+            if(validacijaUspjesna)
+            {
+                String spol;
+                String datum = datePicker.Date.ToString();
+
+                if(radio1.IsChecked == true)
+                {
+                    spol = "zensko";
+                }
+                else
+                {
+                    spol = "musko";
+                }
+                try
+                {
+                    Klijent klijent = new Klijent(textBoxIme.Text, textBoxPrezime.Text, textBoxEMail.Text, passwordBoxLozinka.Password,
+                        null, spol, datum, false);
+
+                    // postaviti staticki sistem
+                    // id prebaciti u int i stringove u enume
+
+                    klijentiTabela.InsertAsync(klijent);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
+                    msgDialog.ShowAsync();
+
+                    textBoxIme.Text = textBoxPrezime.Text = textBoxEMail.Text = passwordBoxLozinka.Password = passwordBoxPotvrdaLozinke.Password = "";
+                   
+                    datePicker.Date = new DateTime(2018, 1, 1);
+                    radio1.IsChecked = false; 
+                    radio2.IsChecked = false;
+
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog msgDialogError = new MessageDialog("Error" + ex.ToString());
+                    
+                }
+
+            }
+
         }
 
         public bool validirajIme(string tekst, ref string imeGreska)
@@ -157,6 +212,11 @@ namespace eTaxi
             }
 
             return true;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Registracija));
         }
     }
 }

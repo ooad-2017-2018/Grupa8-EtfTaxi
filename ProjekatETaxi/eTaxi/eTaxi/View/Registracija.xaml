@@ -9,6 +9,10 @@
 
     <Grid x:Name="grid2" Background="Orange" BorderBrush="Black">
         <Grid HorizontalAlignment="Left" Margin="24,28,0,0" VerticalAlignment="Top" Height="Auto" Width="Auto"/>
+
+        <Rectangle Grid.Row="3" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch"
+                   Margin="5" Stroke="Black" StrokeThickness="3" />
+
         <TextBlock HorizontalAlignment="Center" Text="Klijent" TextWrapping="Wrap" VerticalAlignment="Center"
                    FontSize="26" Grid.Row="0" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Center" Text="Vozač" TextWrapping="Wrap" VerticalAlignment="Center"
@@ -29,6 +33,8 @@
             <Image Source ="/Assets/taxiVozac.png"
                    Stretch="Fill"/>
         </Button>
+        <Button Grid.Column="0" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Margin="15,0,0,0"
+                Height="37" Content="Natrag" FontSize="22" Padding="0" Background="LightSlateGray" Click="Button_Click"/>
 
 
         <Grid.RowDefinitions>
@@ -38,6 +44,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="5*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="1.3*" />
         </Grid.RowDefinitions>
     </Grid>
 </Page>

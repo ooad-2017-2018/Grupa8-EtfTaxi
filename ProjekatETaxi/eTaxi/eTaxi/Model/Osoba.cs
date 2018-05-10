@@ -9,19 +9,19 @@ namespace eTaxi.Model
 {
     abstract public class Osoba
     {
-        String Ime { get; set; }
-        String Prezime { get; set; }
-        String EMail { get; set; }
-        String Lozinka { get; set; }
-        Image Slika { get; set; }
+        public String ime { get; set; }
+        public String prezime { get; set; }
+        public String email { get; set; }
+        public String lozinka{ get; set; }
+        public String slika { get; set; }
 
-        public Osoba(string ime, string prezime, string eMail, string lozinka, Image slika)
+        protected Osoba(string ime, string prezime, string email, string lozinka, string slika)
         {
-            Ime = ime;
-            Prezime = prezime;
-            EMail = eMail;
-            Lozinka = lozinka;
-            Slika = slika;
+            this.ime = ime;
+            this.prezime = prezime;
+            this.email = email;
+            this.lozinka = lozinka;
+            this.slika = slika;
         }
     }
 }
