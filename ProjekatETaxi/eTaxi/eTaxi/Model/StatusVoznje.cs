@@ -8,6 +8,7 @@ namespace eTaxi.Model
 {
     public enum StatusVoznje
     {
+        NeRadi,
         NaCekanju,
         UToku,
         Obavljena

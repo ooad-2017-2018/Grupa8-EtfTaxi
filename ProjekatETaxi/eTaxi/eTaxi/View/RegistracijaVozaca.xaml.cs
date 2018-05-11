@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using eTaxi.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,6 +25,11 @@ namespace eTaxi
     /// </summary>
     public sealed partial class RegistracijaVozaca : Page
     {
+
+        IMobileServiceTable<Vozac> vozaciTabela = App.MobileService.GetTable<Vozac>();
+
+        IMobileServiceTable<Auto> autoTabela = App.MobileService.GetTable<Auto>();
+
         public RegistracijaVozaca()
         {
             this.InitializeComponent();
@@ -37,11 +45,14 @@ namespace eTaxi
 
             cBoxRegioni.ItemsSource = regioni;
             cBoxRegioni.SelectedIndex = 0;
-            Pivot.SelectedIndex = 0;     
+            Pivot.SelectedIndex = 0;
+
         }
 
         private void dugmeNastavi1_Click(object sender, RoutedEventArgs e)
         {
+            bool validacijaProsla = false;
+
             // validiraj
             string pgreske = "";
             if (!validirajIme(textBoxIme.Text, ref pgreske) || !validirajPrezime(textBoxPrezime.Text, ref pgreske) ||
@@ -50,16 +61,18 @@ namespace eTaxi
                !validirajDatum(datePicker.Date, ref pgreske) || !validirajRadioButton(ref pgreske))
             {
                 Greska.Text = pgreske;
+                validacijaProsla = false;
             }
             else
             {
                 Pivot.SelectedIndex = 1;
                 Greska.Text = "";
+                validacijaProsla = true;
             }
 
-        }
+            
 
-        // povratak nazad na klijenta i popravi ove margine, labele u registracijama
+        }
 
         private void buttonNazad_Click(object sender, RoutedEventArgs e)
         {
@@ -89,17 +102,63 @@ namespace eTaxi
 
         private void buttonNastaviZadnja_Click(object sender, RoutedEventArgs e)
         {
+            bool validacijaProsla = false;
+
             string pgreske = "";
             if(!ValidirajModel(textBoxModel.Text, ref pgreske))
             {
                 Greska.Text = pgreske;
+                validacijaProsla = false;
             }
 
             else
             {
                 Greska.Text = "";
-                // idemo dalje registracija
+                validacijaProsla = true;
             }
+
+            if (validacijaProsla)
+            {
+                String spol;
+                String datum = datePicker.Date.ToString();
+                //Region region = (Region)(cBoxRegioni.SelectedIndex);
+
+                if (radio1.IsChecked == true)
+                {
+                    spol = "zensko";
+                }
+                else
+                {
+                    spol = "musko";
+                }
+                try
+                {
+                    Auto auto = new Auto((int)(SliderBrojSjedista.Value), textBoxModel.Text, String.Empty);
+                    autoTabela.InsertAsync(auto);
+
+                    // query za id auta sa imenom ovim odozgo
+                    //
+                    //
+
+
+                    Vozac vozac = new Vozac(textBoxIme.Text, textBoxPrezime.Text, textBoxEMail.Text, passwordBoxLozinka.Password,
+                        "/Assets/eTaxiLogo.png", datum, spol, cBoxRegioni.SelectedValue.ToString(), textBoxJMBG.Text, textBoxTelefon.Text, textBoxAdresa.Text,
+                        textBoxBrojKartice.Text, textBoxRadnoIskustvo.Text, "Ceka potvrdu", "Neodobren", "24", 0, 0);
+
+                    vozaciTabela.InsertAsync(vozac);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog vozaca.");
+                    msgDialog.ShowAsync();
+
+                  //  this.Frame.Navigate(typeof(ProfilVozaca));
+
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog msgDialogError = new MessageDialog("Error" + ex.ToString());
+                }
+
+            }
+
         }
 
         private void Povratak_Click(object sender, RoutedEventArgs e)

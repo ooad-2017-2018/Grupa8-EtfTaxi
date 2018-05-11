@@ -16,4 +16,7 @@ namespace eTaxi.Model
         BanjaLuka,
         Vitez
     }
+
+    
+
 }

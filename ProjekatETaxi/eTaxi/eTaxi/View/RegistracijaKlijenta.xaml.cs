@@ -79,14 +79,13 @@ namespace eTaxi
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
                     msgDialog.ShowAsync();
 
-                    textBoxIme.Text = textBoxPrezime.Text = textBoxEMail.Text = passwordBoxLozinka.Password = passwordBoxPotvrdaLozinke.Password = "";
+                    /*textBoxIme.Text = textBoxPrezime.Text = textBoxEMail.Text = passwordBoxLozinka.Password = passwordBoxPotvrdaLozinke.Password = "";
                    
                     datePicker.Date = new DateTime(2018, 1, 1);
                     radio1.IsChecked = false; 
-                    radio2.IsChecked = false;
+                    radio2.IsChecked = false;*/
 
-
-
+                    this.Frame.Navigate(typeof(ProfilKlijenta));
                 }
                 catch (Exception ex)
                 {

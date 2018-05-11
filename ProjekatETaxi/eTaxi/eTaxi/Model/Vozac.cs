@@ -4,40 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using eTaxi.Model;
 
 namespace eTaxi.Model
 {
     public class Vozac : Osoba
     {
-        Region Region { get; set; } 
-        String JMBG { get; set; }
-        String BrojTelefona { get; set; }
-        String BrojKartice { get; set; }
-        String RadnoIskustvo { get; set; }
-        StatusVoznje StatusVoznje { get; set; }
-        StatusZaposlenja StatusZaposlenja { get; set; }
-        Auto Auto { get; set; }
-        double Ocjena { get; set; }
-        List<String> Komentari { get; set; }
-        int BrojVoznji { get; set; }
-        int Id { get; set; }
+        public String id { get; set; }
+        public String DatumRodenja { get; set; }
+        public string Spol { get; set; }
+        public String Region { get; set; }
+        public String JMBG { get; set; }
+        public String BrojTelefona { get; set; }
+        public String AdresaStanovanja { get; set; }
+        public String BrojKartice { get; set; }
+        public String RadnoIskustvo { get; set; }
+        public String StatusVoznje { get; set; }
+        public String StatusZaposlenja { get; set; }
+        public String IdAuta { get; set; }
+        public double Ocjena { get; set; }
+        public int BrojVoznji { get; set; }
 
-        static int globalID = 1;             // autoinkrement ID
-
-        public Vozac(string ime, string prezime, string eMail, string lozinka, string slika) 
+        public Vozac(string ime, string prezime, string eMail, string lozinka, string slika, 
+                    string datum, string spol, String region, string jMBG, string brojTelefona, string adresa, 
+                    string brojKartice, string radnoIskustvo, String statusVoznje, 
+                    String statusZaposlenja, String idAuta, double ocjena, int brojVoznji)
             : base(ime, prezime, eMail, lozinka, slika)
         {
-            Id = globalID;
-            globalID += 1;
-            Komentari = new List<String>();
+            DatumRodenja = datum;
+            Spol = spol;
+            Region = region;
+            JMBG = jMBG;
+            BrojTelefona = brojTelefona;
+            AdresaStanovanja = adresa;
+            BrojKartice = brojKartice;
+            RadnoIskustvo = radnoIskustvo;
+            StatusVoznje = statusVoznje;
+            StatusZaposlenja = statusZaposlenja;
+            IdAuta = idAuta;
+            Ocjena = ocjena;
+            BrojVoznji = brojVoznji;
         }
-
-        public Vozac() : base (null, null, null, null, null){
-            Id = globalID;
-            globalID += 1;
-            Komentari = new List<String>();
-        }
-
-
     }
 }
