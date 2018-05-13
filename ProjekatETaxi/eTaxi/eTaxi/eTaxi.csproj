@@ -152,6 +152,7 @@
     <None Include="eTaxi_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\default-avatar.jpg" />
     <Content Include="Assets\eTaxi.png" />
     <Content Include="Assets\neodobren.jpg" />
     <Content Include="Assets\odobren.jpg" />

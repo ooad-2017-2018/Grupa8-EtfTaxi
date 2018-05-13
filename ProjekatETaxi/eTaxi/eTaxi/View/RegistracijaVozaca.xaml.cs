@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Popups;
 using eTaxi.Model;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -69,9 +70,6 @@ namespace eTaxi
                 Greska.Text = "";
                 validacijaProsla = true;
             }
-
-            
-
         }
 
         private void buttonNazad_Click(object sender, RoutedEventArgs e)
@@ -125,32 +123,41 @@ namespace eTaxi
 
                 if (radio1.IsChecked == true)
                 {
-                    spol = "zensko";
+                    spol = "Žensko";
                 }
                 else
                 {
-                    spol = "musko";
+                    spol = "Muško";
                 }
                 try
                 {
                     Auto auto = new Auto((int)(SliderBrojSjedista.Value), textBoxModel.Text, String.Empty);
-                    autoTabela.InsertAsync(auto);
 
-                    // query za id auta sa imenom ovim odozgo
-                    //
-                    //
+                    buttonNastaviZadnja.IsEnabled = false;
+                    autoTabela.InsertAsync(auto).ContinueWith(task =>
+                    {
+                        buttonNastaviZadnja.IsEnabled = true;
+                        if (task.IsCanceled || task.IsFaulted)
+                        {
+                            new MessageDialog("Desila se neka greska").ShowAsync();
+                        }
+                        else
+                        {
+                            Vozac vozac = new Vozac(textBoxIme.Text, textBoxPrezime.Text, textBoxEMail.Text, passwordBoxLozinka.Password,
+                                                    "/Assets/eTaxiLogo.png", datum, spol, cBoxRegioni.SelectedValue.ToString(), textBoxJMBG.Text, textBoxTelefon.Text, textBoxAdresa.Text,
+                                                    textBoxBrojKartice.Text, textBoxRadnoIskustvo.Text, "Čeka potvrdu", "Neodobren", auto.Id, 0, 0);
 
+                            vozaciTabela.InsertAsync(vozac);
 
-                    Vozac vozac = new Vozac(textBoxIme.Text, textBoxPrezime.Text, textBoxEMail.Text, passwordBoxLozinka.Password,
-                        "/Assets/eTaxiLogo.png", datum, spol, cBoxRegioni.SelectedValue.ToString(), textBoxJMBG.Text, textBoxTelefon.Text, textBoxAdresa.Text,
-                        textBoxBrojKartice.Text, textBoxRadnoIskustvo.Text, "Ceka potvrdu", "Neodobren", "24", 0, 0);
+                            MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog vozaca.");
+                            msgDialog.ShowAsync();
 
-                    vozaciTabela.InsertAsync(vozac);
-                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog vozaca.");
-                    msgDialog.ShowAsync();
+                            Tuple<Vozac, Auto> par = new Tuple<Vozac, Auto>(vozac, auto);
 
-                  //  this.Frame.Navigate(typeof(ProfilVozaca));
+                            this.Frame.Navigate(typeof(ProfilVozaca), par);
+                        }
 
+                    }, TaskScheduler.FromCurrentSynchronizationContext());
                 }
                 catch (Exception ex)
                 {

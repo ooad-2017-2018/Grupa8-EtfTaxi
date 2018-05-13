@@ -18,7 +18,8 @@
         <TextBlock x:Name="textBlockMail" HorizontalAlignment="Right" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Bottom"
                    Grid.Row="1" Grid.Column="0" FontSize="20" Text="E-mail:"
                   />
-        <TextBox x:Name="textBoxEMail" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="1" Text="" VerticalAlignment="Bottom" Width="150"/>
+        <TextBox x:Name="textBoxEMail" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="1" Text=""
+                 VerticalAlignment="Bottom" Width="150"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="2"
                      VerticalAlignment="Top" Width="150" PasswordChar="*"/>
         <TextBlock x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10" Grid.Row="4" Text="Nemate korisnički račun?" 
@@ -27,8 +28,9 @@
                          Click = "hyper_Click" Margin="15" FontStyle="Oblique" Grid.Row="5" VerticalAlignment="Top" FontSize="22"/>
         <TextBlock Grid.Column="0" Grid.Row="5" x:Name="Greska" Foreground="Red" Margin="5" 
                    Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" Stretch="Fill" Fill="Black" />
         <Image x:Name="imageLogo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
-               Source="/Assets/eTaxi.png" Stretch="Fill"/>
+               Source="/Assets/eTaxi.png" Stretch="Uniform"/>
       
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />

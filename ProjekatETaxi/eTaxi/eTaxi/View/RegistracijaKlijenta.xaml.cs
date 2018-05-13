@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Popups;
 using eTaxi.Model;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,7 +33,7 @@ namespace eTaxi
         {
             this.InitializeComponent();
             klijentiTabela = App.MobileService.GetTable<Klijent>();
-            datePicker.Date = new DateTime(2018, 1, 1);
+            datePicker.Date = new DateTime(2018,1,1);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -57,42 +58,47 @@ namespace eTaxi
             if(validacijaUspjesna)
             {
                 String spol;
-                String datum = datePicker.Date.ToString();
+                String datum = datePicker.Date.ToString("yyyy-MM-dd"); ;
 
                 if(radio1.IsChecked == true)
                 {
-                    spol = "zensko";
+                    spol = "Žensko";
                 }
                 else
                 {
-                    spol = "musko";
+                    spol = "Muško";
                 }
                 try
                 {
                     Klijent klijent = new Klijent(textBoxIme.Text, textBoxPrezime.Text, textBoxEMail.Text, passwordBoxLozinka.Password,
-                        null, spol, datum, false);
+                        "", spol, datum, false, 0);
 
                     // postaviti staticki sistem
                     // id prebaciti u int i stringove u enume
 
-                    klijentiTabela.InsertAsync(klijent);
-                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
-                    msgDialog.ShowAsync();
+                    button1.IsEnabled = false;
+                    klijentiTabela.InsertAsync(klijent).ContinueWith(task =>
+                    {
+                        button1.IsEnabled = true;
+                        if (task.IsCanceled || task.IsFaulted)
+                        {
+                            new MessageDialog("Desila se neka greska").ShowAsync();
+                        }
+                        else
+                        {
+                            MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
+                            msgDialog.ShowAsync();
 
-                    /*textBoxIme.Text = textBoxPrezime.Text = textBoxEMail.Text = passwordBoxLozinka.Password = passwordBoxPotvrdaLozinke.Password = "";
-                   
-                    datePicker.Date = new DateTime(2018, 1, 1);
-                    radio1.IsChecked = false; 
-                    radio2.IsChecked = false;*/
+                            this.Frame.Navigate(typeof(ProfilKlijenta), klijent);
+                        }
 
-                    this.Frame.Navigate(typeof(ProfilKlijenta));
+                    }, TaskScheduler.FromCurrentSynchronizationContext());
+            
                 }
                 catch (Exception ex)
                 {
-                    MessageDialog msgDialogError = new MessageDialog("Error" + ex.ToString());
-                    
+                    MessageDialog msgDialogError = new MessageDialog("Error" + ex.ToString());                   
                 }
-
             }
 
         }

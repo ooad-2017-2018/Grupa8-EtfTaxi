@@ -10,11 +10,12 @@
     <Grid Background="Orange">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.6*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="2.7*"/>
+            <RowDefinition Height="3.3*"/>
+            <RowDefinition Height="0.65*"/>
+            <RowDefinition Height="2.3*"/>
             <RowDefinition Height="1.8*"/>
             <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*" />
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -24,7 +25,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="0.75*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="180*"/>
@@ -32,41 +33,34 @@
                 <ColumnDefinition Width="49*"/>
             </Grid.ColumnDefinitions>
 
-            <Ellipse x:Name="slikaProfila" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                     Width="130" Height="130" Margin="25,4,25,4.667">
+            <Ellipse x:Name="slika" Grid.RowSpan="2" Width="130" Height="130" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Assets/eTaxiLogo.png" Stretch="Fill" >
+                    <ImageBrush ImageSource="/Assets/default-avatar.jpg" Stretch="Fill" >
                     </ImageBrush>
                 </Ellipse.Fill>
             </Ellipse>
 
             <Button x:Name="buttonIzmijeniSliku" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Content="Izmijeni sliku" FontSize="18" Padding="15,4,15,4" Margin="22,9.333,22,10"/>
-            <TextBlock x:Name="labelaIme"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="67,16,17.18,15.333"
+            <TextBlock x:Name="labelaIme"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="20,0,0,0"
                        Text="Ime" VerticalAlignment="Center" FontSize="28"/>
-            <TextBlock x:Name="labelaPrezime"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="41,15.667,40,15.667"
+            <TextBlock x:Name="labelaPrezime"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Margin="20,0,0,0"
                     Text="Prezime" VerticalAlignment="Center" FontSize="28" Grid.ColumnSpan="2"/>
-            <TextBlock x:Name="labelaRegion"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="47,9.333,46,8" 
+            <TextBlock x:Name="labelaRegion"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="20,0,0,0" 
                    Text="Region" VerticalAlignment="Center" FontSize="28" Grid.ColumnSpan="2"/>
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1.2*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Broj vožnji:" Margin="5" FontSize="20"/>
-            <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Ocjena:" Margin="5" FontSize="20"/>
-            <TextBlock x:Name="labelaBrojVoznji" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="23" Margin="5" FontSize="20"/>
-            <TextBlock x:Name="labelaOcjena" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" 
-                       Text="0.43" Margin="5" FontSize="20"/>
-        </Grid>
+            <TextBlock x:Name="labelaBrojVoznji" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                       Text="Broj vožnji:" Margin="20,0,0,0" FontSize="20"/>
+            <TextBlock x:Name="labelaOcjena" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                       Text="Ocjena:" Margin="20,0,0,0" FontSize="20"/>
+         </Grid>
 
         <Grid Grid.Row="3" Grid.Column="0">
 
@@ -81,19 +75,15 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Broj sjedišta:" Margin="5" FontSize="20"/>
-            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Model auta:" Margin="5" FontSize="20"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Link auta:" Margin="5" FontSize="20"/>
+            <TextBlock x:Name="labelaBrojSjedista" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                       Text="Broj sjedišta:" Margin="20,0,0,0" FontSize="20"/>
+            <TextBlock x:Name="labelaModelAuta" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                       Text="Model auta:" Margin="20,0,0,0" FontSize="20"/>
+            <TextBlock x:Name="labelaLinkAuta" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                       Text="Link auta:" Margin="20,0,0,0" FontSize="20"/>
             <HyperlinkButton x:Name="linkPromijeniPodatke" Content="Promijeni podatke" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"   />
 
-            <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="4" Margin="5" FontSize="20"/>
-            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                       Text="Rimac C_Two:" Margin="5" FontSize="20"/>
-            <HyperlinkButton x:Name="linkAuta" Content="www.google.ba/search..." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"   />
+             <HyperlinkButton x:Name="linkAuta" Content="www.google.ba/search..." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"   />
             <Button x:Name="buttonIzmijeniPodatke" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Content="Potvrdi" FontSize="18" Padding="30,3,30,3"/>
         </Grid>
@@ -118,7 +108,7 @@
             <Ellipse x:Name="slikaNotifikacije" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                      Width="55" Height="55">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Assets/eTaxiLogo.png" Stretch="Fill" >
+                    <ImageBrush ImageSource="/Assets/eTaxi.png" Stretch="Fill" >
                     </ImageBrush>
                 </Ellipse.Fill>
             </Ellipse>
@@ -138,6 +128,10 @@
 
 
         </Grid>
+
+        <Button Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                Width="150" Margin="15,0,0,0" Height="37" Content="Natrag" FontSize="22" Padding="0" 
+                Background="LightSlateGray" Click="Button_Click" />
 
 
     </Grid>

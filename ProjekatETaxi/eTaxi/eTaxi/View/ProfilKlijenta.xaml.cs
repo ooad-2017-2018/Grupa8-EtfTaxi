@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eTaxi.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,12 +23,31 @@ namespace eTaxi
     /// </summary>
     public sealed partial class ProfilKlijenta : Page
     {
+        Klijent klijent;
 
         public ProfilKlijenta()
         {
             this.InitializeComponent();
         }
 
-        
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            klijent = e.Parameter as Klijent;
+            ShowData();
+        }
+
+        private void ShowData()
+        {
+            labelaIme.Text = klijent.ime;
+            labelaPrezime.Text = klijent.prezime;
+            labelaSpol.Text = klijent.spol;
+            labelaDatum.Text = klijent.datum_rodenja;
+            labelaBrojVoznji.Text = "Broj vožnji: " + klijent.brojVoznji.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

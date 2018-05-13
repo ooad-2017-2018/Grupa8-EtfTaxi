@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eTaxi.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,39 @@ namespace eTaxi
     /// </summary>
     public sealed partial class ProfilVozaca : Page
     {
+        Auto auto;
+        Vozac vozac;
+        
         public ProfilVozaca()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Tuple <Vozac, Auto> par = e.Parameter as Tuple<Vozac, Auto>;
+            vozac = par.Item1;
+            auto = par.Item2;
+            ShowData();
+        }
+
+        private void ShowData()
+        {
+            labelaIme.Text = vozac.ime;
+            labelaPrezime.Text = vozac.prezime;
+            labelaRegion.Text = vozac.Region;
+            labelaBrojVoznji.Text = "Broj vožnji: " + vozac.BrojVoznji.ToString();
+            labelaOcjena.Text = "Ocjena: " + vozac.Ocjena.ToString();
+            labelaBrojSjedista.Text = "Broj sjedišta: " + auto.BrojSjedista.ToString();
+            labelaModelAuta.Text = "Model auta: " + auto.Model;
+            labelaLinkAuta.Text = "Link auta: " + auto.Link;
+            labelaStanjeVoznje.Text = vozac.StatusVoznje;
+
         }
     }
 }
