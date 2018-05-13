@@ -17,6 +17,11 @@ namespace eTaxi.Model
         public String Link { get; set; }
         public String Id { get; set; }
 
+        public Auto()
+        {
+
+        }
+
         public Auto(int brojSjedista, string model, string link)
         {
             BrojSjedista = brojSjedista;

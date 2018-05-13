@@ -12,8 +12,9 @@ namespace eTaxi.Model
         public String ime { get; set; }
         public String prezime { get; set; }
         public String email { get; set; }
-        public String lozinka{ get; set; }
+        public String lozinka { get; set; }
         public String slika { get; set; }
+        public bool administrator { get; set; }
 
         protected Osoba(string ime, string prezime, string email, string lozinka, string slika)
         {
@@ -22,6 +23,12 @@ namespace eTaxi.Model
             this.email = email;
             this.lozinka = lozinka;
             this.slika = slika;
+            this.administrator = false;
+        }
+
+        public void PostaviOsobuZaAdministratora (Klijent k)
+        {
+            k.administrator = true;
         }
     }
 }

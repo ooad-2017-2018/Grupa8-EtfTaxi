@@ -9,7 +9,7 @@ namespace eTaxi.Model
 {
     public class Administrator : Osoba
     {
-        public Administrator() : base(null, null, null, null, null) { }
+
         public Administrator(string ime, string prezime, string eMail, string lozinka, string slika) 
             : base(ime, prezime, eMail, lozinka, slika) { }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using eTaxi.Model;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.Foundation;
@@ -26,7 +27,9 @@ namespace eTaxi
     public sealed partial class MainPage : Page
     {
 
-        IMobileServiceTable<Glupa> GlupaTabela;
+        IMobileServiceTable<Klijent> klijentTabela;
+        IMobileServiceTable<Vozac> vozacTabela;
+        IMobileServiceTable<Auto> autoTabela;
 
         public static MainPage Glavna;
         public static Sistem sistem = new Sistem();
@@ -35,10 +38,9 @@ namespace eTaxi
         {
             this.InitializeComponent();
             Glavna = this;
-            GlupaTabela = App.MobileService.GetTable<Glupa>();
-
-          //  imageLogo.Source = "Assets/eTaxi.png";
-
+            klijentTabela = App.MobileService.GetTable<Klijent>();
+            vozacTabela = App.MobileService.GetTable<Vozac>();
+            autoTabela = App.MobileService.GetTable<Auto>();
         }
 
         private void hyper_Click(object sender, RoutedEventArgs e)
@@ -48,28 +50,68 @@ namespace eTaxi
 
         private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
         {
+            bool validacijaUspjesna = false;
 
-            /*Glupa glupan = new Glupa("glupan", "glupovic");
+            string pgreske = "";
 
-            GlupaTabela.InsertAsync(glupan);
+            if (!validirajEMail(textBoxEMail.Text, ref pgreske))
+            {
+                Greska.Text = pgreske;
+            validacijaUspjesna = false;
+            }
+            else if (!validirajPassword(passwordBox.Password, ref pgreske))
+            {
+                Greska.Text = pgreske;
+            validacijaUspjesna = false;
+            }
+            else
+            {
+                Greska.Text = "";
+            validacijaUspjesna = true;
+            }
 
-            MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta.");
-            msgDialog.ShowAsync();*/
+            if(validacijaUspjesna)
+            {
+                string unesenEMail = textBoxEMail.Text;
+                string unesenaLozinka = passwordBox.Password;
 
-             string pgreske = "";
+                klijentTabela.Where(k => k.email == unesenEMail).ToListAsync().ContinueWith(klijentTask =>
+                {
+                    Klijent klijent = klijentTask.Result.FirstOrDefault(k => k.lozinka == unesenaLozinka);
 
-             if (!validirajEMail(textBoxEMail.Text, ref pgreske))
-             {
-                 Greska.Text = pgreske;
-             }
-             else if (!validirajPassword(passwordBox.Password.ToString(), ref pgreske))
-             {
-                 Greska.Text = pgreske;
-             }
-             else
-             {
-                 Greska.Text = "";
-             }
+                    if(klijent != null && klijent.administrator == false)
+                    {
+                        this.Frame.Navigate(typeof(ProfilKlijenta), klijent);
+                        return;
+                    }
+                    else if(klijent != null && klijent.administrator == true)
+                    {
+                        this.Frame.Navigate(typeof(ProfilAdministratora), klijent);
+                        return;
+                    }
+
+                    vozacTabela.Where(v => v.email == unesenEMail).ToListAsync().ContinueWith(vozacTask =>
+                    {
+                        Vozac vozac = vozacTask.Result.FirstOrDefault(v => v.lozinka == unesenaLozinka);
+
+                        if(vozac != null)
+                        {
+                            autoTabela.LookupAsync(vozac.IdAuta).ContinueWith(autoTask =>
+                            {
+                                var auto = autoTask.Result;
+
+                                Tuple<Vozac, Auto> par = new Tuple<Vozac, Auto>(vozac, auto);
+
+                                this.Frame.Navigate(typeof(ProfilVozaca), par);
+                                
+                            }, TaskScheduler.FromCurrentSynchronizationContext());
+                            return;
+                        }
+                        Greska.Text = "Uneseni e-mail ili lozinka nisu tačni!";
+                    }, TaskScheduler.FromCurrentSynchronizationContext());                    
+                }, TaskScheduler.FromCurrentSynchronizationContext());
+            }
+             
         }
 
         public bool validirajEMail(string tekst, ref string pgreske)
