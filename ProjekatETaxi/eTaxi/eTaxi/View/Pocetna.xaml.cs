@@ -41,6 +41,25 @@ namespace eTaxi
             klijentTabela = App.MobileService.GetTable<Klijent>();
             vozacTabela = App.MobileService.GetTable<Vozac>();
             autoTabela = App.MobileService.GetTable<Auto>();
+
+         // AzurirajStatuse();
+        }
+
+        private async void AzurirajStatuse()
+        {
+            await
+
+            klijentTabela.ToListAsync().ContinueWith(adminTask =>
+            {
+                List<Klijent> dobavljeniKlijenti = adminTask.Result;
+
+                foreach(Klijent k in dobavljeniKlijenti)
+                {
+                    k.administrator = false;
+                    klijentTabela.UpdateAsync(k);
+                }
+                
+            }, TaskScheduler.FromCurrentSynchronizationContext());                              // nakon izvršenja idi na UI thread.
         }
 
         private void hyper_Click(object sender, RoutedEventArgs e)
@@ -54,12 +73,12 @@ namespace eTaxi
 
             string pgreske = "";
 
-            if (!validirajEMail(textBoxEMail.Text, ref pgreske))
+            if (!ValidirajEMail(textBoxEMail.Text, ref pgreske))
             {
                 Greska.Text = pgreske;
             validacijaUspjesna = false;
             }
-            else if (!validirajPassword(passwordBox.Password, ref pgreske))
+            else if (!ValidirajPassword(passwordBox.Password, ref pgreske))
             {
                 Greska.Text = pgreske;
             validacijaUspjesna = false;
@@ -114,7 +133,7 @@ namespace eTaxi
              
         }
 
-        public bool validirajEMail(string tekst, ref string pgreske)
+        public bool ValidirajEMail(string tekst, ref string pgreske)
         {
             bool imaLudogA = false;
             pgreske = "";
@@ -142,7 +161,7 @@ namespace eTaxi
             return true;
         }
 
-        public bool validirajPassword(string tekst, ref string pgreske2)
+        public bool ValidirajPassword(string tekst, ref string pgreske2)
         {
             pgreske2 = "";
 

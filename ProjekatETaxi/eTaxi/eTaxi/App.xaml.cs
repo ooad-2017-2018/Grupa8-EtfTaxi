@@ -29,7 +29,7 @@ namespace eTaxi
     sealed partial class App : Application
     {
 
-        public static MobileServiceClient MobileService = new
+        public static MobileServiceClient MobileService = new                                   // unešen konekcioni string
         MobileServiceClient("https://etfetaxi.azurewebsites.net");
 
         /// <summary>
