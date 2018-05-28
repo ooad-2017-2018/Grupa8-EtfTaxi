@@ -27,7 +27,7 @@
 
         <Ellipse x:Name="slika" Grid.RowSpan="2" Width="150" Height="150" Grid.Row="1" Grid.Column="0">
             <Ellipse.Fill>
-                <ImageBrush ImageSource="/Assets/eTaxi.png" Stretch="Fill" >
+                <ImageBrush ImageSource="/Assets/default-avatar.jpg" Stretch="Fill" >
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
@@ -38,17 +38,17 @@
         <TextBlock x:Name="labelaPrezime" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="2" Text="Prezime"
                    VerticalAlignment="Center" FontSize="28"/>
         <Button x:Name="buttonIzmijeniSliku" Content="Izmijeni sliku" Grid.Column="0" HorizontalAlignment="Center" Margin="5,15,5,5" 
-                Grid.Row="3" VerticalAlignment="Top" FontSize="18" Padding="15,4,15,4"/>
+                Grid.Row="3" VerticalAlignment="Top" FontSize="18" Padding="15,4,15,4" Click="buttonIzmijeniSliku_Click"/>
         <Button x:Name="buttonIzmijeniPodatke" Content="Izmijeni podatke" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5,15,5,5" 
                 Grid.Row="3" VerticalAlignment="Top" FontSize="18" Padding="4"/>
         <TextBlock Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="4"  
                    Text="Broj vozača:" VerticalAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="labelaBrojVozaca" Grid.Column="1" HorizontalAlignment="Left" Margin="10" Grid.Row="4"  
-                   Text="23" VerticalAlignment="Center" FontSize="20"/>
+                   Text="0" VerticalAlignment="Center" FontSize="20"/>
         <TextBlock Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="5"  
                    Text="Broj klijenata:" VerticalAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="labelaBrojKlijenata" Grid.Column="1" HorizontalAlignment="Left" Margin="10" Grid.Row="5"  
-                   Text="921" VerticalAlignment="Center" FontSize="20"/>
+                   Text="0" VerticalAlignment="Center" FontSize="20"/>
         <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" Margin="0" Grid.Row="6"  
                    Text="Vozači:" VerticalAlignment="Bottom" FontSize="20"/>
 
@@ -72,27 +72,27 @@
 
             <Button Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="0,30,0,0" Padding="0"
                  VerticalAlignment="Top" Height="100" Width="100" Background="Orange">
-                <Ellipse x:Name="slikaVoznjaOdobreni" Width="95" Height="95">
+                <Ellipse x:Name="slikaVoznjaSuspendovan" Width="95" Height="95">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Assets/eTaxi.png" Stretch="Fill" />
+                        <ImageBrush ImageSource="/Assets/suspendovan.jpg" Stretch="Fill" />
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
 
             <Button Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Margin="0,30,0,0" Padding="0"
                  VerticalAlignment="Top" Height="100" Width="100" Background="Orange">
-                <Ellipse x:Name="slikaVoznjaSuspendovani" Width="95" Height="95">
+                <Ellipse x:Name="slikaVoznjaNeodobren" Width="95" Height="95">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Assets/eTaxi.png" Stretch="Fill" />
+                        <ImageBrush ImageSource="/Assets/neodobren.jpg" Stretch="Fill" />
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
 
             <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="0,30,0,0" Padding="0"
                  VerticalAlignment="Top" Height="100" Width="100" Background="Orange">
-                <Ellipse x:Name="slikaVoznjaNeodobreni" Width="95" Height="95">
+                <Ellipse x:Name="slikaVoznjaOdobren" Width="95" Height="95">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Assets/eTaxi.png" Stretch="Fill" />
+                        <ImageBrush ImageSource="/Assets/odobren.jpg" Stretch="Fill" />
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>

@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace eTaxi
@@ -42,8 +43,32 @@ namespace eTaxi
             vozacTabela = App.MobileService.GetTable<Vozac>();
             autoTabela = App.MobileService.GetTable<Auto>();
 
-         // AzurirajStatuse();
+            UpdateAdmina("aplakalovi1@etf.unsa.ba");
         }
+
+        private void HardkodirajAdmina()
+        {
+            Klijent k = new Klijent("Anja", "Plakalović", "aplakalovi1@etf.unsa.ba", "anjaanja", null, Spol.Zensko.ToString(), "10.10.1997", false, 0);
+            klijentTabela.InsertAsync(k);
+        }
+
+        private async Task UpdateAdmina(string email)
+        {
+            await klijentTabela.ToListAsync().ContinueWith(adminTask =>
+            {
+                List<Klijent> klijenti = adminTask.Result;
+
+                foreach (Klijent k in klijenti)
+                {
+                    if (k.email.Equals(email))
+                    {
+                        k.administrator = true;
+                        klijentTabela.UpdateAsync(k);
+                    }
+                }
+            }, TaskScheduler.FromCurrentSynchronizationContext());
+              
+        } 
 
         private async Task AzurirajStatuse()
         {
