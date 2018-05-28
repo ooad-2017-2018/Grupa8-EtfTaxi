@@ -45,11 +45,9 @@ namespace eTaxi
          // AzurirajStatuse();
         }
 
-        private async void AzurirajStatuse()
+        private async Task AzurirajStatuse()
         {
-            await
-
-            klijentTabela.ToListAsync().ContinueWith(adminTask =>
+            await klijentTabela.ToListAsync().ContinueWith(adminTask =>
             {
                 List<Klijent> dobavljeniKlijenti = adminTask.Result;
 
