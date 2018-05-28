@@ -51,10 +51,14 @@
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="0">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            
+            <Rectangle Grid.Row="0" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
 
             <TextBlock x:Name="labelaBrojVoznji" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" 
                        Text="Broj vožnji:" Margin="20,0,0,0" FontSize="20"/>
@@ -89,7 +93,7 @@
         </Grid>
 
         <Grid Grid.Row="4" Grid.Column="0">
-
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.7*"/>
                 <RowDefinition Height="*"/>
@@ -99,6 +103,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <Rectangle Grid.Row="0" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
+           
             <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
                        Text="Stanje vozača:" Margin="5" FontSize="20"/>
             <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
@@ -130,7 +137,7 @@
         </Grid>
 
         <Button Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
-                Width="150" Margin="15,0,0,0" Height="37" Content="Natrag" FontSize="22" Padding="0" 
+                Width="150" Margin="15,5,5,5" Height="34" Content="Natrag" FontSize="22" Padding="0" 
                 Background="LightSlateGray" Click="Button_Click" />
 
 

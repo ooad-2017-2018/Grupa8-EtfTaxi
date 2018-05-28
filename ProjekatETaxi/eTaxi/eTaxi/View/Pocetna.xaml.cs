@@ -43,7 +43,6 @@ namespace eTaxi
             vozacTabela = App.MobileService.GetTable<Vozac>();
             autoTabela = App.MobileService.GetTable<Auto>();
 
-            UpdateAdmina("aplakalovi1@etf.unsa.ba");
         }
 
         private void HardkodirajAdmina()
@@ -116,6 +115,9 @@ namespace eTaxi
             {
                 string unesenEMail = textBoxEMail.Text;
                 string unesenaLozinka = passwordBox.Password;
+
+                dugmePrijaviSe.IsEnabled = false;
+                hyper.IsEnabled = false;
 
                 klijentTabela.Where(k => k.email == unesenEMail).ToListAsync().ContinueWith(klijentTask =>
                 {

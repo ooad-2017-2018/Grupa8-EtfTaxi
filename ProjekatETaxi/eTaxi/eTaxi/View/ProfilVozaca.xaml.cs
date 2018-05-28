@@ -57,5 +57,12 @@ namespace eTaxi
             labelaStanjeVoznje.Text = vozac.StatusVoznje;
 
         }
+
+        async void linkAuta_Click(object sender, RoutedEventArgs e)
+        {
+            string uriToLaunch = linkAuta.Content.ToString();
+            Uri uri = new Uri(uriToLaunch);
+            var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+        }
     }
 }

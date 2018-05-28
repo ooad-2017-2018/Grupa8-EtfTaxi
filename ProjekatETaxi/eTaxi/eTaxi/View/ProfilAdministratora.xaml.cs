@@ -16,6 +16,9 @@ using Windows.UI.Xaml.Navigation;
 using eTaxi.Model;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
+using Windows.Storage;
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.Storage.Streams;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -78,7 +81,11 @@ namespace eTaxi
                 FileTypeFilter = { ".jpg", ".jpeg", ".png", ".gif" }
             };
             var file = picker.PickSingleFileAsync();
-            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

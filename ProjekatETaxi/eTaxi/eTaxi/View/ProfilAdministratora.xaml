@@ -17,7 +17,8 @@
             <RowDefinition Height="0.8*" />
             <RowDefinition Height="0.4*" />
             <RowDefinition Height="0.5*" />
-            <RowDefinition Height="2.3*" />
+            <RowDefinition Height="1.8*" />
+            <RowDefinition Height="0.7*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*" />
@@ -27,10 +28,16 @@
 
         <Ellipse x:Name="slika" Grid.RowSpan="2" Width="150" Height="150" Grid.Row="1" Grid.Column="0">
             <Ellipse.Fill>
-                <ImageBrush ImageSource="/Assets/default-avatar.jpg" Stretch="Fill" >
+                <ImageBrush x:Name ="brushSlika" ImageSource="/Assets/default-avatar.jpg" Stretch="Fill" >
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
+        
+        <Rectangle Grid.Row="4" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="3"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
+        <Rectangle Grid.Row="6" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="3"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
+        
         <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" Margin="5" Grid.Row="0" Text="Profil administratora"
                    VerticalAlignment="Center" FontSize="24"/>
         <TextBlock x:Name="labelaIme" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="1" Text="Ime"
@@ -98,6 +105,10 @@
             </Button>
 
         </Grid>
+        <Button Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                Width="150" Margin="15,0,0,0" Height="37" Content="Natrag" FontSize="22" Padding="0" 
+                Background="LightSlateGray" Click="Button_Click"/>
+
 
     </Grid>
 </Page>

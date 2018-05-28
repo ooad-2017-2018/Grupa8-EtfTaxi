@@ -31,6 +31,13 @@
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
+        
+        <Rectangle Grid.Row="4" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="3"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
+
+        <Rectangle Grid.Row="6" VerticalAlignment="Top" Height="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="3"
+                   Margin="2" Stroke="Black" StrokeThickness="2" />
+
         <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" Margin="5" Grid.Row="0" Text="Profil klijenta"
                    VerticalAlignment="Center" FontSize="24"/>
         <TextBlock x:Name="labelaIme" Grid.Column="1" HorizontalAlignment="Left" Grid.ColumnSpan="2" Grid.Row="1" Text="Ime"
