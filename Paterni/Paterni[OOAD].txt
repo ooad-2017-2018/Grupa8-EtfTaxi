@@ -1,0 +1,62 @@
+Proxy pattern
+Proxy je strukturalni patern koji odvaja interfejs od implementacije. Ideja paterna je da Proxy objekt radi kao surogat objekt za stvarne objekte. On rješava probleme kada objekt ne može uvijek biti instanciran direktno, što se može desiti u sluèaju restrikcije pristupa. 
+
+Proxy pattern u našem projektu korisitmo na sljedeæi naèin: 
+Buduæi da je administrator u projektu implementiran kao klijent sa atributom bool administrator = true, samo on može pristupiti podacima svih vozaèa, pretraživanju istih kao i blokiranju i prihvatanju njihovih prijava.
+U ovom sluèaju bi se mogao upotrijebiti Proxy patern za realizaciju restrikcija pristupa.
+
+
+Observer pattern
+Kada je potrebno da jedan objekat promijeni stanje a da se drugi zainteresovani objekti obavijeste koristimo Observer pattern.
+
+Observer pattern u našem projektu korisitmo na sljedeæi naèin:
+Prilikom prihvatanja zahtjeva za vožnju od strane jednog vozaèa, instanca te vožnje se blokira iz liste notifikacija. Tako je sprijeèeno prihvatanje iste notifikacije od strane više vozaèa.
+
+
+Strategy pattern
+Pattern iz matiène klase izdvaja algoritam i ukljuèuje ga u posebne klase. Kada postoje razlièiti algoritmi za neki problem tada je pogodan ovaj pattern. Iz familije algoritama za korištenje omoguæava izbor jednog. 
+
+Strategy pattern u našem projektu korisitmo na sljedeæi naèin:
+Prilikom pretraživanja vozaèa od strane administratora, administrator ima moguænost pretraživanja vozaèa po imenu i prezimenu ili pomoæu statusa samog vozaèa (suspendovan, odobren, neodobren). 
+
+
+State pattern
+Ovaj pattern se postiže promjenom podklase unutar hijerarhije klasa. On je dinamièka verzija strategy patterna. Objekat mijenja naèin ponašanja na osnovnu stanja u kojem se trenutno nalazi. 
+
+State pattern u našem projektu korisitmo na sljedeæi naèin:
+Ukoliko je atribut bool administrator = true u objektu klase Klijent, onda se taj objekat ponaša kao administrator. U suprotnom se taj objekt klase ponaša kao klijent.
+Ukoliko je atribut bool stalniKlijent = true u objektu klase Klijent, onda se taj objekat ponaša kao stalni klijent i ima moguænost ostvarivanja popusta.
+
+
+
+Template method pattern
+Omoguæava izdvajanje odreðenih koraka algoritma u odvojene podklase.
+
+Template method pattern u našem projektu možemo koristiti na sljedeæi naèin:
+Algoritam pretraživanja vozaèa od strane administratora, bi se mogao podijeliti u tri razlièita algoritma u ovisnosti od toga koje vozaèe administrator želi pregledati (suspendovani, odobreni, neodobreni).
+
+
+Iterator patern
+Iterator patern omoguæava sekvencijalni pristup elementima kolekcije bez poznavanja kako je kolekcija strukturirana.
+
+Iterator patern u našem projektu nije iskorišten. Ovaj patern bi se mogao iskoristiti u pretraživanju lista objekata u kontejnerskoj klasi.
+
+
+Factory pattern
+U modernim programskim jezicima, Factory pattern je jedan od najèešæe korištenih. On omoguæava skrivanje instanciranja objekta iza factory metode referenciranja novog objekta kroz zajednièki interfejs. 
+
+Factory method pattern u našem projektu možemo koristiti na sljedeæi naèin:
+Klase Vozaè i Klijent su izvedene iz klase Osoba te prilikom instanciranja objekata Vozaè i Klijent bi se trebao instancirati i objekat klase Osoba. 
+
+Interpreter pattern
+Za evoluiranje gramatike nekog jezika i jezièkih izraza koristimo Interpreter pattern. Da bi se riješio neki jezièki problem implementira se AbstractExpression interfejs koji koristi kompozitni pattern. TerminalExpression i CompoundExpression su klase pomoæu kojih rekurzivno rješavamo probleme interpretacije nekog jezièkog izraza prilikom èega je CompoundExpression dio pravila koji poziva drugo pravilo u obradi izraza.
+TerminalExpression je bazni sluèaj za neko pravilo.
+
+Interpreter pattern u našem projektu možemo koristiti na sljedeæi naèin:
+U sluèaju validacije raznih tipova unosa korisnika.
+
+Decorator pattern
+Ovaj pattern se koristi za dinamièko dodavanje elemenata i moguænosti postojeæim objektima pri èemu objekat o tome ne zna ništa. Èesto se koristi za implementaciju kompresija videa, simultano prevoðenje itd... Da bismo implementirali ovaj pattern potrebno je implementirati klasu Component, interfejs IComponent i klasu Decorator.
+
+
+
