@@ -1,0 +1,107 @@
+﻿@model ETaxiDotNet.Models.ProfilViewModel
+
+@{
+    ViewBag.Title = "Profil";
+}
+
+<h2>Profil</h2>
+<div class="row">
+    <div class="col-md-4">
+
+        <section id="picture">
+            <img src="../WebImages/profill.png" alt="Sample Image" width="400" height="400" />
+            <br />
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8">
+                    <input type="submit" value="Take a photo" onclick="location.href='@Url.Action("Index","Photo")'" class="btn btn-primary" />
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+    <div class="col-md-6">
+
+        <section id="informations">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Ime, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Ime, new { @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Prezime, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Prezime, new { @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Region, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Region, new { @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.BrojVoznji, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.BrojVoznji, new { @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Ocjena, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Ocjena, new { @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.ModelAuta, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.ModelAuta, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(m => m.LinkAuta, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.LinkAuta, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.StanjeVozaca, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.StanjeVozaca, new { @class = "form-control" })
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+</div>
+
+<br />
+<br />
