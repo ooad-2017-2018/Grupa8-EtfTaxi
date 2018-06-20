@@ -80,12 +80,12 @@ namespace ETaxiDotNet.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        [Required]
-        [Display(Name = "Klijent")]
+ 
+        [Display(Name = "Client")]
         public bool Klijent { get; set; }
 
-        [Required]
-        [Display(Name = "Vozac")]
+   
+        [Display(Name = "Driver")]
         public bool Vozac { get; set; }
     }
 

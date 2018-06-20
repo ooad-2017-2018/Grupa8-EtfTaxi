@@ -28,17 +28,11 @@
         <div class="col-md-10">
             @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
+    </div>  
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            @Html.RadioButtonFor(model => model.Klijent, "M", false)@Html.Label("Klijent")
-            @Html.RadioButtonFor(model => model.Vozac, "F", false)@Html.Label("Vozac")
+            @Html.RadioButtonFor(model => model.Klijent, true)@Html.Label("Klijent")
+            @Html.RadioButtonFor(model => model.Vozac, true)@Html.Label("Vozac")
         </div>
     </div>
     <div class="form-group">
